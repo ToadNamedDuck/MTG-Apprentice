@@ -1,0 +1,29 @@
+@font-face {
+    font-family: 'beleren-smallcaps';
+    src: local('belerensmallcaps'), url(/src/fonts/belerensmallcaps-bold.ttf) format('TrueType');
+    /* other formats include: 'woff2', 'truetype, 'opentype',
+                              'embedded-opentype', and 'svg' */
+}
+
+#header{
+    display: flex;
+    font-family: beleren-smallcaps;
+    justify-content: space-between;
+    height: 150px;
+    max-height: 150px;
+    width: auto;
+    background-color: #cec9af;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+a{
+    margin-left: 3%;
+}
+#header--logo{
+    height: 100%;
+    width: auto;
+}
+#header--name{
+    align-self: center;
+    font-size: 64px;
+}

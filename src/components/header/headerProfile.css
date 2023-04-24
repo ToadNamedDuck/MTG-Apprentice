@@ -1,0 +1,36 @@
+@font-face {
+    font-family: 'matrixb';
+    src: local('matrixb'), url(/src/fonts/matrixb.ttf) format('TrueType');
+    /* other formats include: 'woff2', 'truetype, 'opentype',
+                              'embedded-opentype', and 'svg' */
+}
+
+#header--profile {
+    display: flex;
+    flex-direction: row;
+    height:50px;
+    width: auto;
+    max-width: 300px;
+    font-family: matrixb;
+    color: #D7E0EA;
+    font-size: 22px;
+    align-items: center;
+    background: linear-gradient(#7c7558, #6b654b) padding-box,
+        linear-gradient(to right bottom, darkgray, #D7E0EA) border-box;
+    border-radius: 4px;
+    border: 3px solid transparent;
+    margin-right: 3%;
+}
+#logout__button{
+    background: linear-gradient(#D7E0EA, #6b654b);
+    color: rgb(172, 2, 2);
+    font-family: matrixb;
+    font-size: 14px;
+    justify-self:flex-start;
+    align-self: flex-end;
+}
+#userName{
+    display: inline-block;
+    align-self: flex-end;
+    margin-left: 5px;
+}

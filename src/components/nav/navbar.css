@@ -1,0 +1,23 @@
+@font-face {
+    font-family: 'beleren-smallcaps';
+    src: local('belerensmallcaps'), url(/src/fonts/belerensmallcaps-bold.ttf) format('TrueType');
+    /* other formats include: 'woff2', 'truetype, 'opentype',
+                              'embedded-opentype', and 'svg' */
+}
+
+#main--navbar{
+    border-top: solid, black, 3px;
+    font-family: beleren-smallcaps;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.header__link{
+    margin: 8px;
+}
+.header__link:hover{
+    color:blue;
+}
+input, button{
+    font-family: beleren-smallcaps;
+}
