@@ -5,7 +5,7 @@ export function NavSearch({ setCardNameSearch }) {
     const [searchBarInput, setSearchBarInput] = useState("")
     const navigate = useNavigate();
 
-    function handleSubmit(){
+    function handleSubmit() {
         setCardNameSearch(searchBarInput);
         navigate("/browse")
     }
@@ -15,14 +15,15 @@ export function NavSearch({ setCardNameSearch }) {
             type="text"
             placeholder="Looking for a card?"
             onChange={(e) => {
-                        setSearchBarInput(e.target.value)
-                    }
-                }
+                setSearchBarInput(e.target.value)
+            }
+            }
             onKeyDown={(e) => {
-                if(e.code === "Enter"){
+                if (e.code === "Enter") {
                     handleSubmit()
                 }
-            } }
+            }
+            }
         >
         </input>
         <button id="navSearch--Button" type="button" onClick={handleSubmit}>Go!</button>

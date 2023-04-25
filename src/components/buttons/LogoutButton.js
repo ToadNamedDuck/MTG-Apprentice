@@ -1,12 +1,12 @@
 import { useNavigate } from "react-router-dom"
 import "../header/headerProfile.css"
 
-export function LogoutButton() {
+export function LogoutButton({ setEmptyUser }) {
 
     const navigate = useNavigate()
 
     return <button id="logout__button" onClick={(e) => {
-        e.preventDefault()
+        setEmptyUser({})
         localStorage.removeItem("apprentice")
         navigate("/", {replace: true})
     } }>Log Out</button>

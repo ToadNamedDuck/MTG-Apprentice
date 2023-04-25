@@ -1,55 +1,71 @@
 {
-    "users": [
-        {
-            "id": 0,
-            "email": "duck@mtg-apprentice.com",
-            "userName": "ToadNamedDuck",
-            "tagId": 0,
-            "featuredFavoriteCardId": null,
-            "profilePictureUrl": "https://cdn.openart.ai/stable_diffusion/c387a2965b5d2b59357dfb717d0d0e590898ff8a_2000x2000.webp"
-        },
-        {
-            "id": 1,
-            "email": "cloud@mtg-apprentice.com",
-            "userName": "Cloudsterx",
-            "tagId": 1,
-            "featuredFavoriteCardId": null,
-            "profilePictureUrl": ""
-        }
-    ],
-    "tags": [
-        {
-            "id": 0,
-            "name": "",
-            "isUserTag": true
-        },
-        {
-            "id": 1,
-            "name": "Swamp Enthusiast",
-            "isUserTag": true
-        }
-    ],
-    "userFavoritedCards": [
-        {
-            "id": 0,
-            "cardId": "d670234b-f692-5c27-a87b-1775e30017a3",
-            "cardName": "Teysa, Orzhov Scion Avatar",
-            "cardSetCode": "PMOA",
-            "cardImageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=182295&type=card",
-            "userId": 0
-        }
-    ],
-    "friendUsers": [
-        {
-            "id": 0,
-            "userId": 0,
-            "friendId": 1
-        }
-    ],
-    "userDecks": [
-
-    ],
-    "cardsInADeck": [
-        
-    ]
+  "users": [
+    {
+      "id": 0,
+      "email": "duck@mtg-apprentice.com",
+      "userName": "ToadNamedDuck",
+      "tagId": 0,
+      "featuredFavoriteCardId": null,
+      "profilePictureUrl": "https://cdn.openart.ai/stable_diffusion/c387a2965b5d2b59357dfb717d0d0e590898ff8a_2000x2000.webp"
+    },
+    {
+      "id": 1,
+      "email": "cloud@mtg-apprentice.com",
+      "userName": "Cloudsterx",
+      "tagId": 1,
+      "featuredFavoriteCardId": null,
+      "profilePictureUrl": "/green-icon.png"
+    },
+    {
+      "email": "Mattyboi@gmail.com",
+      "userName": "Mimikizm",
+      "tagId": 1,
+      "featuredFavoriteCardId": "",
+      "profilePictureUrl": "https://media.licdn.com/dms/image/sync/C4E27AQE0kHr8Ei3iqg/articleshare-shrink_480/0/1681287778402?e=1683057600&v=beta&t=xP23-Qdkt0Vyq86HCqmmRxVfOChLMClUt159ykcsXaE",
+      "id": 2
+    },
+    {
+      "email": "cullen@mtg-apprentice.com",
+      "userName": "Xx_Cu113N_xX",
+      "tagId": 0,
+      "featuredFavoriteCardId": "",
+      "profilePictureUrl": "/green-icon.png",
+      "id": 3
+    }
+  ],
+  "tags": [
+    {
+      "id": 0,
+      "name": "Angelic Crusader",
+      "isUserTag": true
+    },
+    {
+      "id": 1,
+      "name": "Swamp Enthusiast",
+      "isUserTag": true
+    },
+    {
+      "id": 2,
+      "name": "Aggro",
+      "isUserTag": false
+    }
+  ],
+  "userFavoritedCards": [
+    {
+      "id": "d670234b-f692-5c27-a87b-1775e30017a3",
+      "name": "Teysa, Orzhov Scion Avatar",
+      "setName": "Magic Online Avatars",
+      "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=182295&type=card",
+      "userId": 0
+    }
+  ],
+  "friendUsers": [
+    {
+      "id": 0,
+      "userId": 0,
+      "friendId": 1
+    }
+  ],
+  "userDecks": [],
+  "cardsInADeck": []
 }

@@ -1,6 +1,7 @@
 import { useState } from "react"
 import { Outlet, Route, Routes } from "react-router-dom"
 import { SearchResults } from "../pages/SearchResults"
+import { MyProfile } from "../pages/MyProfile"
 
 
 export const ApplicationViews = ({cardNameSearch}) => {
@@ -17,6 +18,7 @@ export const ApplicationViews = ({cardNameSearch}) => {
             }>
             </Route>
             <Route path="/browse" element={<SearchResults cardNameSearch={cardNameSearch}/>}/>
+            <Route path="/profile" element={<MyProfile/>}/>
         </Routes>
     )
 }

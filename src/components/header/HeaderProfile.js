@@ -21,7 +21,7 @@ export function HeaderProfile() {
         <img id="profile__picture__header" width="50px" height="50px" src={currentUser.profilePictureUrl} />
         <p id="userName">{currentUser.userName}</p>
 
-        <LogoutButton />
+        <LogoutButton setEmptyUser={setUser}/>
     </div>
     :
     ""

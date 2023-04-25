@@ -1,16 +1,27 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import { useNavigate } from "react-router-dom"
 import "./Login.css"
+import { getUserTags } from "../../api-calls/LocalAPICalls"
 
 export const Register = (props) => {
+
+    //Pull tags from local database for a user to select.
+    const [userTags, setUserTags] = useState([])
+
+    useEffect((() => {
+        getUserTags().then(tagArray => setUserTags(tagArray))
+    }),[])
+    //Build the user object to send to the api
     const [apprenticeUser, setApprentice] = useState({
         email: "",
         userName: "",
-        tagId: 0,
+        tagId: -1,
         featuredFavoriteCardId: "",
-        profilePictureUrl: ""
+        profilePictureUrl: "/green-icon.png"
 
     })
+
+
     let navigate = useNavigate()
 
     const registerNewUser = () => {
@@ -51,7 +62,20 @@ export const Register = (props) => {
 
     const updateApprenticeUser = (evt) => {
         const copy = {...apprenticeUser}
-        copy[evt.target.id] = evt.target.value
+        if(evt.target.id === "tagId"){
+            copy[evt.target.id] = parseInt(evt.target.value)    
+        }
+        else if(evt.target.id === "profilePictureUrl"){
+                if(evt.target.value === ""){
+                    copy[evt.target.id] = "/green-icon.png"
+                }
+                else{
+                    copy[evt.target.id] = evt.target.value 
+                }
+        }
+        else{
+                copy[evt.target.id] = evt.target.value
+            }
         setApprentice(copy)
     }
 
@@ -63,13 +87,30 @@ export const Register = (props) => {
                     <label htmlFor="userName"> Username </label>
                     <input onChange={updateApprenticeUser}
                            type="text" id="userName" className="form-control"
-                           placeholder="Enter your name" required autoFocus />
+                           placeholder="This name is public." required autoFocus />
                 </fieldset>
                 <fieldset>
                     <label htmlFor="email"> Email address </label>
                     <input onChange={updateApprenticeUser}
                         type="email" id="email" className="form-control"
                         placeholder="Email address" required />
+                </fieldset>
+                <fieldset>
+                    <label htmlFor="userTag">Select a tag to display on your profile.</label>
+                    <select className="form-control" id="tagId" onChange={updateApprenticeUser}>
+                        <option name="tagSelect" value={-1}>Please select a tag.</option>
+                        {
+                            userTags.map(tag => {
+                                return <option name="tagSelect" value={tag.id} key={`tag--key--${tag.id}`}>{tag.name}</option>
+                            }
+                                )
+                        }
+                    </select>
+                </fieldset>
+                <fieldset>
+                    <label htmlFor="profilePictureUrl">Enter a url to upload a profile picture.</label>
+                    <input onChange={updateApprenticeUser} className="form-control" type="text" id="profilePictureUrl" placeholder="Put a link here"></input>
+                    <img width="50px" height="50px" src={apprenticeUser.profilePictureUrl}/>
                 </fieldset>
                 <fieldset>
                     <button type="submit"> Register </button>
