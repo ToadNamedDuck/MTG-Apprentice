@@ -1,0 +1,16 @@
+.card--basic{
+    display: inline-block;
+    width: 250px;
+    height: auto;
+    margin: 10px;
+    align-items: center;
+}
+.card--alignment{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.card--basic--header{
+    overflow: wrap;
+}

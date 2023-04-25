@@ -1,0 +1,10 @@
+#resultsPanel{
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    margin-left: 5%;
+    overflow-y: auto;
+}
+#searchResultsH2{
+    margin-left: 5%;
+}

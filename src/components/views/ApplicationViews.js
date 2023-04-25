@@ -1,8 +1,9 @@
 import { useState } from "react"
 import { Outlet, Route, Routes } from "react-router-dom"
+import { SearchResults } from "../pages/SearchResults"
 
 
-export const ApplicationViews = () => {
+export const ApplicationViews = ({cardNameSearch}) => {
 
     return (
         <Routes>
@@ -11,13 +12,11 @@ export const ApplicationViews = () => {
                     <h1>Magic: The Gathering™ - Apprentice</h1>
                     <p>bla bla bla bla bla bla bla bla bla</p>
 
-                    <Outlet />
+                    <Outlet/>
                 </>
             }>
             </Route>
-            <Route path="/browse">
-                <></>
-            </Route>
+            <Route path="/browse" element={<SearchResults cardNameSearch={cardNameSearch}/>}/>
         </Routes>
     )
 }

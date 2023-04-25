@@ -6,18 +6,34 @@
 }
 
 #main--navbar{
-    border-top: solid, black, 3px;
     font-family: beleren-smallcaps;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    font-size: 18px;
+    background-color: #b39c2a;
+    padding-bottom: 4px;
+    border-bottom: solid black 2px;
 }
 .header__link{
+    text-decoration: none;
     margin: 8px;
+    color: rgb(53, 53, 53);
+}
+#header--name{
+    color: rgb(53, 53, 53);
 }
 .header__link:hover{
-    color:blue;
+    color:#e2c974;
 }
-input, button{
+input{
     font-family: beleren-smallcaps;
+    font-size: 18px;
+    border: solid black 2px;
+}
+#navSearch--Button{
+    font-family: beleren-smallcaps;
+    background: linear-gradient(#b4bbc4, #4e4a37);
+    font-size: 18px;
+    color: #e2c974;
 }

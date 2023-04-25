@@ -12,7 +12,7 @@
     height: 150px;
     max-height: 150px;
     width: auto;
-    background-color: #cec9af;
+    background: linear-gradient(#cec9af, #b39c2a);
     padding-top: 4px;
     padding-bottom: 4px;
 }
