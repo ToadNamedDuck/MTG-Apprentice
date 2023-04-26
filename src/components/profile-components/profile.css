@@ -1,0 +1,42 @@
+@font-face {
+    font-family: 'beleren-smallcaps';
+    src: local('belerensmallcaps'), url(/src/fonts/belerensmallcaps-bold.ttf) format('TrueType');
+    /* other formats include: 'woff2', 'truetype, 'opentype',
+                              'embedded-opentype', and 'svg' */
+}
+
+#userProfilePictureCard{
+    display: flex;
+    height: 75px;
+    max-height: 75px;
+    font-family: beleren-smallcaps;
+    max-width: 50%;
+    border: solid black 2px;
+    margin-left: 25%;
+    margin-top: 1%;
+}
+#cardTextInfo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 75px;
+    max-height: 75px;
+    width: 100%;
+}
+#userProfilePicture{
+    display: inline-block;
+}
+#userNameCard{
+    font-size: 1.6em;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+#userTag{
+    margin-top: 0;
+    margin-bottom: 0;
+}
+#profile--container{
+    padding-top: 1%;
+    background: linear-gradient(#b4bbc4, #4e4a37);
+}

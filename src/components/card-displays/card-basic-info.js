@@ -1,5 +1,6 @@
+import { AddToFavorites } from "../buttons/AddToFavoritesButton";
 import "./card-basic-info.css"
-export function CardBasicInfo({ cardObject }){
+export function CardBasicInfo({ cardObject, loggedInFavorites, setLoggedInFavorites }){
     if(!cardObject.imageUrl){
         cardObject.imageUrl = "/no-card-image.jpg"
     }
@@ -11,6 +12,13 @@ export function CardBasicInfo({ cardObject }){
     }
 
     return <div className="card--basic">
+        {
+            loggedInFavorites.find(card => card.id === cardObject.id) ?
+            ""
+            :
+            //use the new component and pass setLoggedInFavorites
+            <AddToFavorites setLoggedInFavorites={setLoggedInFavorites} cardObj={cardObject}/>
+        }
         <div className="card--alignment">
         {
             cardObject.secondaryNamePiece ?

@@ -7,10 +7,16 @@ import { Login } from './auth/Login';
 import { Register } from './auth/Register';
 import { Authorized } from './views/Authorized'
 import { Header } from './header/Header';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
+import { getUserFavoriteCards } from '../api-calls/LocalAPICalls';
 
 function Apprentice() {
 	const [cardNameSearch, setCardNameSearch] = useState("")
+	const [loggedInFavorites, setLoggedInFavorites] = useState([])
+	useEffect((() => {
+		getUserFavoriteCards(JSON.parse(localStorage.getItem("apprentice"))?.id)
+		.then(cardArray => setLoggedInFavorites(cardArray))
+	}),[])
     return <Routes>
 		<Route path="/login" element={<Login />} />
 		<Route path="/register" element={<Register />} />
@@ -20,7 +26,7 @@ function Apprentice() {
 				<>
 					<Header/>
 					<NavBar setCardNameSearch={setCardNameSearch}/>
-					<ApplicationViews cardNameSearch={cardNameSearch}/>
+					<ApplicationViews cardNameSearch={cardNameSearch} loggedInFavorites={loggedInFavorites} setLoggedInFavorites={setLoggedInFavorites}/>
 				</>
 			</Authorized>
 

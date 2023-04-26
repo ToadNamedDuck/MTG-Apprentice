@@ -1,41 +1,45 @@
 import { useEffect, useState } from "react";
 import { getSingleUserById, getUserTags } from "../../api-calls/LocalAPICalls";
+import "./profile.css"
 
-export function ProfilePictureDetailCard({id}){
+export function ProfilePictureDetailCard({ id }) {
     const [user, setUser] = useState(
         {
             userName: "Loading...",
             profilePictureUrl: "/green-icon.png",
             tagId: -1
         }
-        )
+    )
     const [userTags, setUserTags] = useState([])
-    const [currentUserTag, setCurrentTag] = useState({name: "loading"})
+    const [currentUserTag, setCurrentTag] = useState({ name: "loading" })
 
     useEffect((() => {
         getSingleUserById(id)
-        .then(userArray => setUser(userArray[0]))    
+            .then(userArray => setUser(userArray[0]))
     }),
-    [])
+        [id])
 
-    useEffect((()=>{
+    useEffect((() => {
         getUserTags()
             .then(tagArray => setUserTags(tagArray))
 
-        }),[user])
+    }), [user])
 
     useEffect((() => {
-        if(user.tagId === -1){
-            setCurrentTag({name: "No Tag"})
+        if (user.tagId === -1) {
+            setCurrentTag({ name: "No Tag" })
         }
-        else{
+        else {
             setCurrentTag(userTags.find(tag => tag.id === user.tagId))
         }
-    }),[userTags])
+    }), [userTags])
+
 
     return <div id="userProfilePictureCard">
-        <img width="75px" height="75px" src={user.profilePictureUrl}/>
-        <h2>{user.userName}'s Page</h2>
-        <p>{currentUserTag?.name}</p>
-    </div>
+                <img id="userProfilePicture" width="75px" height="75px" src={user?.profilePictureUrl} />
+                <div id="cardTextInfo">
+                    <p id="userNameCard">{user?.userName}'s Page</p>
+                    <p id="userTag">{currentUserTag?.name}</p>
+                </div>
+            </div>
 }

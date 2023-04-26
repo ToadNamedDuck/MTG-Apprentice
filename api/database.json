@@ -1,6 +1,14 @@
 {
   "users": [
     {
+      "id": -1,
+      "email": "neverguess@email.com",
+      "userName": "Loading...",
+      "tagId": 3,
+      "featuredFavoriteCardId": null,
+      "profilePictureUrl": "/green-icon.png"
+    },
+    {
       "id": 0,
       "email": "duck@mtg-apprentice.com",
       "userName": "ToadNamedDuck",
@@ -31,6 +39,14 @@
       "featuredFavoriteCardId": "",
       "profilePictureUrl": "/green-icon.png",
       "id": 3
+    },
+    {
+      "email": "mermaid@ocean.com",
+      "userName": "Ariel",
+      "tagId": 0,
+      "featuredFavoriteCardId": "",
+      "profilePictureUrl": "https://www.disneyclips.com/images4/images/ariel-face6.png",
+      "id": 4
     }
   ],
   "tags": [
@@ -48,6 +64,11 @@
       "id": 2,
       "name": "Aggro",
       "isUserTag": false
+    },
+    {
+      "id": 3,
+      "name": "Loading...",
+      "isUserTag": true
     }
   ],
   "userFavoritedCards": [
@@ -57,6 +78,174 @@
       "setName": "Magic Online Avatars",
       "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=182295&type=card",
       "userId": 0
+    },
+    {
+      "id": "7a05291f-d4ec-597f-8685-db41838d38c5",
+      "name": "Liliana, the Last Hope",
+      "setName": "Double Masters 2022",
+      "userId": 0,
+      "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=571414&type=card"
+    },
+    {
+      "id": "987670e7-5626-53b3-a110-c0ed6588f6d4",
+      "name": "Liliana of the Veil",
+      "setName": "Dominaria United",
+      "userId": 0,
+      "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=577430&type=card"
+    },
+    {
+      "id": "c5075bc5-ad52-5c59-b764-22bfc4b1c39c",
+      "name": "Platinum Angel",
+      "setName": "Tenth Edition",
+      "userId": 0,
+      "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=106537&type=card"
+    },
+    {
+      "id": "ad53597a-4448-5cbd-82bf-11d163b0c14f",
+      "name": "Archangel Avacyn ",
+      "setName": "Shadows over Innistrad",
+      "userId": 0,
+      "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=409741&type=card"
+    },
+    {
+      "id": "16371f62-73e5-54f5-bce1-801098de2d53",
+      "name": "Archangel Avacyn ",
+      "setName": "Shadows over Innistrad",
+      "userId": 0,
+      "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=409742&type=card"
+    },
+    {
+      "id": "1ead4754-36eb-5463-bf63-c1fe672bc3ef",
+      "name": "Fatal Push",
+      "setName": "Double Masters",
+      "userId": 0,
+      "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=491352&type=card"
+    },
+    {
+      "id": "d5c168f3-c49e-51bb-a232-25e178e71d59",
+      "name": "Fatal Push",
+      "setName": "Kaladesh Remastered",
+      "userId": 0,
+      "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=547890&type=card"
+    },
+    {
+      "id": "7dc1a803-e2b2-55d6-bb1c-3a9f1de6bd71",
+      "name": "Fatal Push",
+      "setName": "Secret Lair Drop",
+      "userId": 0,
+      "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=497493&type=card"
+    },
+    {
+      "id": "3a04e61f-4259-5fc3-9192-3d66ee3a41a9",
+      "name": "Nahiri, the Harbinger",
+      "setName": "Commander 2020",
+      "userId": 0,
+      "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=482851&type=card"
+    },
+    {
+      "id": "5d9149e0-82b0-5c57-aa06-d00b2df95a42",
+      "name": "Nahiri's Wrath",
+      "setName": "Eldritch Moon",
+      "userId": 0,
+      "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=414436&type=card"
+    },
+    {
+      "id": "e517109b-449d-514a-8f14-d7c7885d4ea2",
+      "name": "Nahiri's Sacrifice",
+      "setName": "Phyrexia: All Will Be One",
+      "userId": 0,
+      "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=602672&type=card"
+    },
+    {
+      "id": "2fa42070-d660-5145-bcba-860b5fd3e129",
+      "name": "Nahiri, the Lithomancer",
+      "setName": "Commander 2014 Oversized",
+      "userId": 0,
+      "imageUrl": "/no-card-image.jpg"
+    },
+    {
+      "id": "fd86bf3d-af3b-5cbf-9c93-3eb67b99b6ff",
+      "name": "Nahiri, the Harbinger",
+      "setName": "Mythic Edition",
+      "userId": 0,
+      "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=463948&type=card"
+    },
+    {
+      "id": "42286bd8-c3b2-503a-a1ef-2557e678a41c",
+      "name": "Nahiri, the Unforgiving",
+      "setName": "Phyrexia: All Will Be One",
+      "userId": 0,
+      "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=605334&type=card"
+    },
+    {
+      "id": "b1889829-459a-50f7-bf4a-36cde8037059",
+      "name": "Nahiri, the Unforgiving",
+      "setName": "Phyrexia: All Will Be One",
+      "userId": 0,
+      "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=605450&type=card"
+    },
+    {
+      "id": "1faa0a14-481c-53d0-9dd5-ccf714d4d0ce",
+      "name": "Nahiri, the Unforgiving",
+      "setName": "Phyrexia: All Will Be One",
+      "userId": 0,
+      "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=602741&type=card"
+    },
+    {
+      "id": "4d548085-e5e4-56a4-94d6-763616773fa9",
+      "name": "Nahiri, the Unforgiving",
+      "setName": "Phyrexia: All Will Be One",
+      "userId": 0,
+      "imageUrl": "/no-card-image.jpg"
+    },
+    {
+      "id": "92240a5c-54d4-5af6-8470-f8b863a92969",
+      "name": "Nahiri, the Unforgiving",
+      "setName": "Phyrexia: All Will Be One",
+      "userId": 0,
+      "imageUrl": "/no-card-image.jpg"
+    },
+    {
+      "id": "5cb42eeb-a86f-5aab-9fdf-66b3ff48c17b",
+      "name": "Nahiri, the Lithomancer",
+      "setName": "Commander 2014",
+      "userId": 0,
+      "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=389612&type=card"
+    },
+    {
+      "id": "896a92b1-ed29-5daf-bf89-2502224f8f11",
+      "name": "Jace, the Mind Sculptor",
+      "setName": "Double Masters",
+      "userId": 0,
+      "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=489729&type=card"
+    },
+    {
+      "id": "8cf473f4-74e4-5ad6-a033-5226ab5fe63a",
+      "name": "Jace's Archivist",
+      "setName": "Commander 2013",
+      "userId": 0,
+      "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=376379&type=card"
+    },
+    {
+      "id": "2818f287-8403-5217-9a59-c11af2ab77e1",
+      "name": "Avacyn, Angel of Hope",
+      "setName": "Double Masters",
+      "userId": 0,
+      "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=489681&type=card"
+    },
+    {
+      "id": "9bf9c63a-0fe5-5bb2-9cef-32cc94c3aa29",
+      "name": "Avacyn, Angel of Hope",
+      "setName": "Double Masters",
+      "userId": 0,
+      "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=491344&type=card"
+    },
+    {
+      "id": "9ede43f0-8c1c-5da3-80bf-bd83cb4189ac",
+      "name": "Avacyn, Guardian Angel",
+      "setName": "Magic 2015",
+      "userId": 0,
+      "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=383185&type=card"
     }
   ],
   "friendUsers": [

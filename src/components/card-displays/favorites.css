@@ -1,0 +1,31 @@
+#UserFavorites{
+    height: 620px;
+    width: 90%;
+    margin-left: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#favorites--header{
+    display: inline-block;
+}
+#favCardsList{
+    align-self: flex-start;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border: solid black 2px;
+    border-radius: 4px;
+    width:100%;
+    justify-content: space-evenly;
+    overflow-y: auto;
+    height: 470px;
+    max-height: 470px;
+}
+.individualFavorite{
+    display: flex;
+    flex-direction: column;
+}
+.removeFavorite{
+    
+}

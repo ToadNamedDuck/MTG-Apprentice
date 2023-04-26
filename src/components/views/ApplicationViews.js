@@ -1,10 +1,10 @@
 import { useState } from "react"
 import { Outlet, Route, Routes } from "react-router-dom"
 import { SearchResults } from "../pages/SearchResults"
-import { MyProfile } from "../pages/MyProfile"
+import { Profile } from "../pages/Profile"
 
 
-export const ApplicationViews = ({cardNameSearch}) => {
+export const ApplicationViews = ({cardNameSearch, loggedInFavorites, setLoggedInFavorites}) => {
 
     return (
         <Routes>
@@ -17,8 +17,8 @@ export const ApplicationViews = ({cardNameSearch}) => {
                 </>
             }>
             </Route>
-            <Route path="/browse" element={<SearchResults cardNameSearch={cardNameSearch}/>}/>
-            <Route path="/profile" element={<MyProfile/>}/>
+            <Route path="/browse" element={<SearchResults cardNameSearch={cardNameSearch} loggedInFavorites={loggedInFavorites} setLoggedInFavorites={setLoggedInFavorites}/>}/>
+            <Route path="/profile/:id" element={<Profile loggedInFavorites={loggedInFavorites} setLoggedInFavorites={setLoggedInFavorites}/>}/>
         </Routes>
     )
 }

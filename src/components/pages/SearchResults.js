@@ -4,7 +4,7 @@ import "./searchResults.css"
 import { NoSearchResults } from "./NoSearchResults"
 import { AnErrorOccurred } from "./AnErrorOccurred"
 
-export function SearchResults({ cardNameSearch }) {
+export function SearchResults({ cardNameSearch, loggedInFavorites, setLoggedInFavorites }) {
     //state for returned cards
     const [searchResults, setSearchResults] = useState({})
     //state for response status to put up the right information when there's an error
@@ -48,7 +48,10 @@ export function SearchResults({ cardNameSearch }) {
         <h2 id="searchResultsH2">Search Results</h2>
         <div id="resultsPanel">
         {   searchResults?.cards?.length > 0 && responseStatus === null?
-            searchResults.cards.map(card => <CardBasicInfo cardObject={card} key={`simple-card--${card.id}`}/>)
+            searchResults.cards.map(card => <CardBasicInfo loggedInFavorites={loggedInFavorites}
+                setLoggedInFavorites={setLoggedInFavorites}
+                cardObject={card}
+                key={`simple-card--${card.id}`}/>)
             : 
                 searchResults?.cards?.length === 0 && responseStatus === null ?
                 <NoSearchResults/>
