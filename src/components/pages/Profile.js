@@ -4,7 +4,7 @@ import { FavoriteCards } from "../card-displays/Favorite-Cards";
 import { useEffect, useState } from "react";
 import { getUserFavoriteCards } from "../../api-calls/LocalAPICalls";
 
-export function Profile({loggedInFavorites}){
+export function Profile({loggedInFavorites, setLoggedInFavorites}){
 
     const { id } = useParams()
     const [pageId, setPageId] = useState(id)
@@ -34,6 +34,11 @@ export function Profile({loggedInFavorites}){
 
     return <div id="profile--container">
         <ProfilePictureDetailCard id={pageId}/>
-        <FavoriteCards loggedInFavorites={loggedInFavorites} loggedInUserId={JSON.parse(localStorage.getItem("apprentice"))?.id} favoritedCardsOwnerId={pageId} cardArray={favCards}/>
+        <FavoriteCards loggedInFavorites={loggedInFavorites}
+            loggedInUserId={JSON.parse(localStorage.getItem("apprentice"))?.id}
+            favoritedCardsOwnerId={pageId}
+            cardArray={favCards}
+            setLoggedInFavorites={setLoggedInFavorites}
+            setFavCards={setFavCards}/>
     </div>
 }

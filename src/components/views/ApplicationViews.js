@@ -2,6 +2,7 @@ import { useState } from "react"
 import { Outlet, Route, Routes } from "react-router-dom"
 import { SearchResults } from "../pages/SearchResults"
 import { Profile } from "../pages/Profile"
+import { EditProfile } from "../pages/EditProfile"
 
 
 export const ApplicationViews = ({cardNameSearch, loggedInFavorites, setLoggedInFavorites}) => {
@@ -19,6 +20,7 @@ export const ApplicationViews = ({cardNameSearch, loggedInFavorites, setLoggedIn
             </Route>
             <Route path="/browse" element={<SearchResults cardNameSearch={cardNameSearch} loggedInFavorites={loggedInFavorites} setLoggedInFavorites={setLoggedInFavorites}/>}/>
             <Route path="/profile/:id" element={<Profile loggedInFavorites={loggedInFavorites} setLoggedInFavorites={setLoggedInFavorites}/>}/>
+            <Route path="/editProfile" element={<EditProfile/>}/>
         </Routes>
     )
 }

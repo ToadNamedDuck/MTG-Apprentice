@@ -1,16 +1,10 @@
 import { addCardToUserFavorites, getUserFavoriteCards } from "../../api-calls/LocalAPICalls"
 
-export function AddToFavorites({cardObj, setLoggedInFavorites}){
-    let currentUserId = JSON.parse(localStorage.getItem("apprentice"))?.id
+export function AddToFavorites({setLoggedInFavorites, cardObj}){
     return <button 
     id="addToFavoritesButton"
-    onClick={(evt) => {
-        evt.preventDefault()
-        addCardToUserFavorites(currentUserId, cardObj)
-        .then(() => {
-            getUserFavoriteCards(currentUserId)
-            .then(cardArray => setLoggedInFavorites(cardArray))
-        }
-        )
+    onClick={() => {
+        addCardToUserFavorites(JSON.parse(localStorage.getItem("apprentice"))?.id, cardObj)
+        .then(() => {getUserFavoriteCards(JSON.parse(localStorage.getItem("apprentice"))?.id).then((cards) => {setLoggedInFavorites(cards)})})
     } }>Add to Favorites</button>
 }

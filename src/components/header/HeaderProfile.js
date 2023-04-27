@@ -3,7 +3,7 @@ import { LogoutButton } from "../buttons/LogoutButton"
 import { getCurrentUser } from "../../api-calls/LocalAPICalls"
 import "./headerProfile.css"
 
-export function HeaderProfile() {
+export function HeaderProfile({setLoggedInFavorites}) {
     const [currentUser, setUser] = useState(
         {
             profilePictureUrl: "",
@@ -21,7 +21,7 @@ export function HeaderProfile() {
         <img id="profile__picture__header" width="50px" height="50px" src={currentUser.profilePictureUrl} />
         <p id="userName">{currentUser.userName}</p>
 
-        <LogoutButton setEmptyUser={setUser}/>
+        <LogoutButton setEmptyUser={setUser} setLoggedInFavorites={setLoggedInFavorites}/>
     </div>
     :
     ""

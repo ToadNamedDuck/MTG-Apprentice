@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { getSingleUserById, getUserTags } from "../../api-calls/LocalAPICalls";
 import "./profile.css"
+import { EditProfileButton } from "../buttons/EditProfileButton";
 
 export function ProfilePictureDetailCard({ id }) {
     const [user, setUser] = useState(
@@ -41,5 +42,6 @@ export function ProfilePictureDetailCard({ id }) {
                     <p id="userNameCard">{user?.userName}'s Page</p>
                     <p id="userTag">{currentUserTag?.name}</p>
                 </div>
+            <EditProfileButton profileId={id}/>
             </div>
 }

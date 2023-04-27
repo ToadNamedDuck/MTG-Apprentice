@@ -1,6 +1,8 @@
+import { Link } from "react-router-dom";
 import { AddToFavorites } from "../buttons/AddToFavoritesButton";
 import "./card-basic-info.css"
 export function CardBasicInfo({ cardObject, loggedInFavorites, setLoggedInFavorites }){
+
     if(!cardObject.imageUrl){
         cardObject.imageUrl = "/no-card-image.jpg"
     }
@@ -11,9 +13,11 @@ export function CardBasicInfo({ cardObject, loggedInFavorites, setLoggedInFavori
         cardObject.secondaryNamePiece = nameFrag2;
     }
 
+
+
     return <div className="card--basic">
         {
-            loggedInFavorites.find(card => card.id === cardObject.id) ?
+            loggedInFavorites.find(card => card.cardId === cardObject.id | card.cardId === cardObject.cardId) ?
             ""
             :
             //use the new component and pass setLoggedInFavorites
@@ -28,7 +32,16 @@ export function CardBasicInfo({ cardObject, loggedInFavorites, setLoggedInFavori
             :
             <header className="card--basic--header">{`${cardObject.name}`}</header>
         }
-        <img src={cardObject.imageUrl} width="223" height="311"/>
+        {
+            typeof cardObject.id === "string" ?
+            <Link to={`/cards/${cardObject.id}`}>
+                <img src={cardObject.imageUrl} width="223" height="311"/>
+            </Link>
+            :
+            <Link to={`/cards/${cardObject.cardId}`}>
+                <img src={cardObject.imageUrl} width="223" height="311"/>
+            </Link>
+        }
         <footer className="card--basic--footer">{cardObject.setName}</footer>
         </div>
     </div>

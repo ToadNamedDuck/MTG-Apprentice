@@ -2,10 +2,12 @@ import React, { useState } from "react"
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom"
 import "./Login.css"
+import { getUserFavoriteCards } from "../../api-calls/LocalAPICalls";
 
-export const Login = () => {
+export const Login = ({setLoggedInFavorites}) => {
     const [email, set] = useState("")
     const navigate = useNavigate()
+    let foundUser;
 
     const handleLogin = (e) => {
         e.preventDefault()
@@ -15,16 +17,24 @@ export const Login = () => {
             .then(foundUsers => {
                 if (foundUsers.length === 1) {
                     const user = foundUsers[0]
+                    foundUser = foundUsers[0]
                     localStorage.setItem("apprentice", JSON.stringify({
                         id: user.id
                     }))
-
+                    
                     navigate("/")
                 }
                 else {
                     window.alert("Invalid login")
                 }
             })
+            .then(() => {
+                if(localStorage.getItem("apprentice")){
+                    getUserFavoriteCards(foundUser.id)
+                    .then((favCards) => setLoggedInFavorites(favCards))
+                }
+                })
+
     }
 
     return (

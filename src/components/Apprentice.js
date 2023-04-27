@@ -18,13 +18,13 @@ function Apprentice() {
 		.then(cardArray => setLoggedInFavorites(cardArray))
 	}),[])
     return <Routes>
-		<Route path="/login" element={<Login />} />
+		<Route path="/login" element={<Login setLoggedInFavorites={setLoggedInFavorites}/>} />
 		<Route path="/register" element={<Register />} />
 
 		<Route path="*" element={
 			<Authorized>
 				<>
-					<Header/>
+					<Header setLoggedInFavorites={setLoggedInFavorites}/>
 					<NavBar setCardNameSearch={setCardNameSearch}/>
 					<ApplicationViews cardNameSearch={cardNameSearch} loggedInFavorites={loggedInFavorites} setLoggedInFavorites={setLoggedInFavorites}/>
 				</>
