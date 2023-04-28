@@ -10,7 +10,7 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    font-size: 18px;
+    font-size: 24px;
     background-color: #b39c2a;
     padding-bottom: 4px;
     border-bottom: solid black 2px;
@@ -28,12 +28,12 @@
 }
 input{
     font-family: beleren-smallcaps;
-    font-size: 18px;
+    font-size: 20px;
     border: solid black 2px;
 }
 #navSearch--Button{
     font-family: beleren-smallcaps;
     background: linear-gradient(#b4bbc4, #4e4a37);
-    font-size: 18px;
+    font-size: 20px;
     color: #e2c974;
 }

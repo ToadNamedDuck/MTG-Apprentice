@@ -101,7 +101,9 @@ export const Register = (props) => {
                         <option name="tagSelect" value={-1}>Please select a tag.</option>
                         {
                             userTags.map(tag => {
-                                return <option name="tagSelect" value={tag.id} key={`tag--key--${tag.id}`}>{tag.name}</option>
+                                if(tag.id !== 3){
+                                    return <option name="tagSelect" value={tag.id} key={`tag--key--${tag.id}`}>{tag.name}</option>
+                                }
                             }
                                 )
                         }
