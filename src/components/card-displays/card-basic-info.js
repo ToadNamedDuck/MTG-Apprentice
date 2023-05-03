@@ -18,7 +18,7 @@ export function CardBasicInfo({ cardObject, loggedInFavorites, setLoggedInFavori
     return <div className="card--basic">
         {
             loggedInFavorites.find(card => card.cardId === cardObject.id | card.cardId === cardObject.cardId) ?
-            ""
+            <div className="emptyButtonSpot"></div>
             :
             //use the new component and pass setLoggedInFavorites
             <AddToFavorites setLoggedInFavorites={setLoggedInFavorites} cardObj={cardObject}/>

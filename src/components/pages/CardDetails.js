@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { CardExpandedInfo } from "../card-displays/card-expanded-info";
 import { AnErrorOccurred } from "./AnErrorOccurred";
+import "./carddetails.css"
 
 export function CardDetails() {
     const { cardId } = useParams()
@@ -34,7 +35,7 @@ export function CardDetails() {
         {
             error === null ?
                 <>
-                    <h2>{cardFromApi.name}</h2>
+                    <h1>{cardFromApi.name}</h1>
                     <CardExpandedInfo cardObj={cardFromApi} />
                 </>
                 :

@@ -44,20 +44,22 @@ export function SearchResults({ cardNameSearch, loggedInFavorites, setLoggedInFa
 
     }), [cardNameSearch])
 
-    return <>
+    return <div id="results">
         <h2 id="searchResultsH2">Search Results</h2>
         <div id="resultsPanel">
         {   searchResults?.cards?.length > 0 && responseStatus === null?
-            searchResults.cards.map(card => <CardBasicInfo loggedInFavorites={loggedInFavorites}
+            searchResults.cards.map(card => <div className="individualResult" key={`simple-card--${card.id}`+`--${searchResults.cards.indexOf(card)}`}>
+                <CardBasicInfo loggedInFavorites={loggedInFavorites}
                 setLoggedInFavorites={setLoggedInFavorites}
                 cardObject={card}
-                key={`simple-card--${card.id}`}/>)
+                />
+                </div>)
             : 
                 searchResults?.cards?.length === 0 && responseStatus === null ?
                 <NoSearchResults/>
             : 
-                <AnErrorOccurred/>
+                <AnErrorOccurred onCardSearch={true}/>
         }
         </div>
-    </>
+    </div>
 }

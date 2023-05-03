@@ -1,15 +1,14 @@
 import { useEffect, useState } from "react"
 import { getCurrentUser, getUserTags, submitEditedProfile } from "../../api-calls/LocalAPICalls"
 import { useNavigate } from "react-router-dom"
+import "./editProfile.css"
 
 export function EditProfile(){
-    const [profile, setProfile] = useState({
-        email: "",
-        userName: "",
-        tagId: -1,
-    })
     const [userTags, setUserTags] = useState([])
-    const [email, setEmail] = useState("")
+    const [profile, setProfile] = useState({
+        userName: "",
+        tagId: 0
+    })
     const [userName, setUserName] = useState("")
     const [tagId, setTagId] = useState(3)
     const [profilePictureUrl, setProfilePictureUrl] = useState("/green-icon.png")
@@ -17,26 +16,26 @@ export function EditProfile(){
     const navigate = useNavigate()
 
     useEffect((() => {
-        getCurrentUser()
-            .then((userArray) => setProfile(userArray[0]))
-    }),[])
-
-    useEffect((() => {
         getUserTags()
             .then((tagArray) => setUserTags(tagArray))
     }),[])
 
     useEffect((() => {
-        setEmail(profile.email)
+        getCurrentUser()
+            .then((userArray) => setProfile(userArray[0]))
+    }),[])
+
+
+    useEffect((() => {
         setUserName(profile.userName)
         setTagId(profile.tagId)
         setProfilePictureUrl(profile.profilePictureUrl)
     }),[profile])
 
     const submitButtonAction = () => {
-        if(email !== "" && userName !== ""){
+        if(userName !== ""){
             const userToSend = {
-                email: email,
+                email: profile.email,
                 userName: userName,
                 tagId: parseInt(tagId),
             }
@@ -55,24 +54,34 @@ export function EditProfile(){
         }
     }
 
+    function optionBuilder(){
+       return userTags.map((tag) => {
+            if(tag.id !== 3){
+                return <option key={`user--tag--edit--${tag.id}`} name="userTag" value={parseInt(tag.id)}>{tag.name}</option>
+            }
+        })
+    }
+
     return <div id="editProfileForm">
-        <label htmlFor="userEmail">Email: </label>
-        <input type="text" id="userEmail" defaultValue={profile.email} placeholder="Enter a new email" onChange={(event) => {setEmail(event.target.value)} }></input>
+        <h2 id="editHeader">Edit Profile</h2>
         <label htmlFor="userUserName">Username: </label>
         <input type="text" id="userUserName" defaultValue={profile.userName} placeholder="Enter a new username" onChange={(event) => {setUserName(event.target.value)} }></input>
-        <label htmlFor="userTag">Tag: </label>
-        <select id="userTag" onChange={(event) => {setTagId(event.target.value)} }>
-            <option name="userTag" value={-1}>Select a tag...</option>
+        <label htmlFor="userTagEdit">Tag: </label>
+        <select id="userTagEdit" value={tagId} onChange={(event) => {setTagId(parseInt(event.target.value))} }>
         {
-            userTags.map((tag) => {
-                if(tag.id !== 3){
-                    return <option key={`user--tag--edit--${tag.id}`} name="userTag" value={tag.id}>{tag.name}</option>
-                }
-            })
+            optionBuilder()
         }
         </select>
-        <label htmlFor="userProfilePictureUrl">Profile Picture Url: </label>
-        <input type="text" id="userProfilePictureUrl" defaultValue={profile.profilePictureUrl} placeholder="Enter a link to your new profile picture" onChange={(event) => {setProfilePictureUrl(event.target.value)} }></input>
+        <div id="profilePictureEditDiv">
+            <label htmlFor="userProfilePictureUrl">Profile Picture Url: </label>
+            <input type="text" id="userProfilePictureUrl" defaultValue={profile.profilePictureUrl} placeholder="Enter an image link" onChange={(event) => {setProfilePictureUrl(event.target.value)} }></input>
+            {
+                profilePictureUrl !== "" ?
+                <img id="newPFP" src={profilePictureUrl} height="50px" width="50px"/>
+                :
+                <img id="newPFP" src="/green-icon.png" height="50px" width="50px"/>
+            }
+        </div>
         <button id="sendEditedProfile" onClick={submitButtonAction}>Submit Changes</button>
     </div>
 }

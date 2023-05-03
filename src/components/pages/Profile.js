@@ -33,7 +33,7 @@ export function Profile({loggedInFavorites, setLoggedInFavorites}){
     }),[])
 
     return <div id="profile--container">
-        <ProfilePictureDetailCard id={pageId}/>
+        <ProfilePictureDetailCard id={pageId} setLoggedInFavorites={setLoggedInFavorites}/>
         <FavoriteCards loggedInFavorites={loggedInFavorites}
             loggedInUserId={JSON.parse(localStorage.getItem("apprentice"))?.id}
             favoritedCardsOwnerId={pageId}

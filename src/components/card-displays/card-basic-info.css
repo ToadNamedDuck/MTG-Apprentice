@@ -1,9 +1,18 @@
+@font-face {
+    font-family: 'beleren-smallcaps';
+    src: local('belerensmallcaps'), url(/src/fonts/belerensmallcaps-bold.ttf) format('TrueType');
+    /* other formats include: 'woff2', 'truetype, 'opentype',
+                              'embedded-opentype', and 'svg' */
+}
+
 .card--basic{
     display: inline-block;
     width: 250px;
     height: auto;
     margin: 10px;
     align-items: center;
+    font-family: beleren-smallcaps;
+    margin-bottom: 15px;
 }
 .card--alignment{
     display: flex;
@@ -13,4 +22,12 @@
 }
 .card--basic--header{
     overflow: wrap;
+    text-align: center;
+}
+.card--basic--footer{
+    overflow: wrap;
+    text-align: center;
+}
+.emptyButtonSpot{
+    height: 20px;
 }

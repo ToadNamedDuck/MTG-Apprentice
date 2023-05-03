@@ -1,0 +1,18 @@
+@font-face {
+    font-family: 'matrixb';
+    src: local('matrixb'), url(/src/fonts/matrixb.ttf) format('TrueType');
+    /* other formats include: 'woff2', 'truetype, 'opentype',
+                              'embedded-opentype', and 'svg' */
+}
+
+#logout__button{
+    background: linear-gradient(#b4bbc4, #4e4a37);
+    color: #e2c974;
+    font-family: matrixb;
+    font-size: 14px;
+    width: 35%;
+}
+
+#logout__button:hover{
+    background: linear-gradient(#b4bbc4, rgb(175, 0, 0));
+}

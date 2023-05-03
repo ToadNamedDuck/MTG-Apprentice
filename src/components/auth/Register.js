@@ -80,25 +80,22 @@ export const Register = (props) => {
     }
 
     return (
-        <main style={{ textAlign: "center" }}>
+        <main className="container--login" style={{ textAlign: "center" }}>
             <form className="form--login" onSubmit={handleRegister}>
                 <h1 className="h3 mb-3 font-weight-normal">Please Register for Magic: The Gathering™ - Apprentice</h1>
-                <fieldset>
+
                     <label htmlFor="userName"> Username </label>
                     <input onChange={updateApprenticeUser}
                            type="text" id="userName" className="form-control"
                            placeholder="This name is public." required autoFocus />
-                </fieldset>
-                <fieldset>
+
                     <label htmlFor="email"> Email address </label>
                     <input onChange={updateApprenticeUser}
                         type="email" id="email" className="form-control"
                         placeholder="Email address" required />
-                </fieldset>
-                <fieldset>
+
                     <label htmlFor="userTag">Select a tag to display on your profile.</label>
                     <select className="form-control" id="tagId" onChange={updateApprenticeUser}>
-                        <option name="tagSelect" value={-1}>Please select a tag.</option>
                         {
                             userTags.map(tag => {
                                 if(tag.id !== 3){
@@ -108,15 +105,13 @@ export const Register = (props) => {
                                 )
                         }
                     </select>
-                </fieldset>
-                <fieldset>
+
                     <label htmlFor="profilePictureUrl">Enter a url to upload a profile picture.</label>
                     <input onChange={updateApprenticeUser} className="form-control" type="text" id="profilePictureUrl" placeholder="Put a link here"></input>
-                    <img width="50px" height="50px" src={apprenticeUser.profilePictureUrl}/>
-                </fieldset>
-                <fieldset>
-                    <button type="submit"> Register </button>
-                </fieldset>
+                    <img id="profilePictureSignUp" width="50px" height="50px" src={apprenticeUser.profilePictureUrl}/>
+
+                    <button id="registerButton--form" className="loginSignUpButtons" type="submit"> Register </button>
+
             </form>
         </main>
     )

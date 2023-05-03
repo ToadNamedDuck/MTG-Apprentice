@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { CardBasicInfo } from "../card-displays/card-basic-info";
 import { AnErrorOccurred } from "./AnErrorOccurred";
+import "./random.css"
 
 export function Random({ loggedInFavorites, setLoggedInFavorites }) {
     const [randomCards, setRandomCards] = useState([
@@ -26,13 +27,22 @@ export function Random({ loggedInFavorites, setLoggedInFavorites }) {
     }), [])
 
     if (error === null) {
-        return <div id="randomCardDiv">
+        return <div id="random">
+            <h2>Random Cards</h2>
+            <div id="randomCardDiv">
             {
                 randomCards.map(card => {
-                    return <CardBasicInfo key={`random--card--${card.id + card.name}`} cardObject={card} loggedInFavorites={loggedInFavorites} setLoggedInFavorites={setLoggedInFavorites} />
+                    return <div id="individualCard" key={`random--card--${card.id + card.name + randomCards.indexOf(card)}`}>
+                        <CardBasicInfo
+                        cardObject={card}
+                        loggedInFavorites={loggedInFavorites}
+                        setLoggedInFavorites={setLoggedInFavorites}
+                        />
+                    </div>
                 })
             }
-            <button onClick={() => {
+            </div>
+            <button className="goAgainButton" onClick={() => {
                 fetch(`https://api.magicthegathering.io/v1/cards?random=true&pageSize=20`)
                     .then((response) => {
                         if (response.ok) {
@@ -49,9 +59,12 @@ export function Random({ loggedInFavorites, setLoggedInFavorites }) {
         </div>
     }
     else {
-        return <>
-            <AnErrorOccurred />
-            <button onClick={() => {
+        return <div id="random">
+        <h2>Random Cards</h2>
+        <div id="randomCardDiv">
+            <AnErrorOccurred onRandomSearch={true}/>
+        </div>
+            <button className="goAgainButton" onClick={() => {
                 fetch(`https://api.magicthegathering.io/v1/cards?random=true&pageSize=20`)
                     .then((response) => {
                         if (response.ok) {
@@ -66,6 +79,6 @@ export function Random({ loggedInFavorites, setLoggedInFavorites }) {
                 setError(null)
             }
             }>Go Again</button>
-        </>
+        </div>
     }
 }

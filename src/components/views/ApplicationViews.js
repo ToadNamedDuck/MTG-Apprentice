@@ -1,24 +1,17 @@
-import { useState } from "react"
-import { Outlet, Route, Routes } from "react-router-dom"
+import { Route, Routes } from "react-router-dom"
 import { SearchResults } from "../pages/SearchResults"
 import { Profile } from "../pages/Profile"
 import { EditProfile } from "../pages/EditProfile"
 import { CardDetails } from "../pages/CardDetails"
 import { Random } from "../pages/Random"
+import { Home } from "../pages/Home"
 
 
 export const ApplicationViews = ({cardNameSearch, loggedInFavorites, setLoggedInFavorites}) => {
 
     return (
         <Routes>
-            <Route path="/" element={
-                <>
-                    <h1>Magic: The Gathering™ - Apprentice</h1>
-                    <p>bla bla bla bla bla bla bla bla bla</p>
-
-                    <Outlet/>
-                </>
-            }>
+            <Route path="/" element={<Home loggedInFavorites={loggedInFavorites} setLoggedInFavorites={setLoggedInFavorites}/>}>
             </Route>
             <Route path="/browse" element={<SearchResults cardNameSearch={cardNameSearch} loggedInFavorites={loggedInFavorites} setLoggedInFavorites={setLoggedInFavorites}/>}/>
             <Route path="/profile/:id" element={<Profile loggedInFavorites={loggedInFavorites} setLoggedInFavorites={setLoggedInFavorites}/>}/>

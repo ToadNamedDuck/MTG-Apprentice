@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom"
 import "./Login.css"
 import { getUserFavoriteCards } from "../../api-calls/LocalAPICalls";
 
-export const Login = ({setLoggedInFavorites}) => {
+export const Login = ({ setLoggedInFavorites }) => {
     const [email, set] = useState("")
     const navigate = useNavigate()
     let foundUser;
@@ -21,7 +21,7 @@ export const Login = ({setLoggedInFavorites}) => {
                     localStorage.setItem("apprentice", JSON.stringify({
                         id: user.id
                     }))
-                    
+
                     navigate("/")
                 }
                 else {
@@ -29,39 +29,33 @@ export const Login = ({setLoggedInFavorites}) => {
                 }
             })
             .then(() => {
-                if(localStorage.getItem("apprentice")){
+                if (localStorage.getItem("apprentice")) {
                     getUserFavoriteCards(foundUser.id)
-                    .then((favCards) => setLoggedInFavorites(favCards))
+                        .then((favCards) => setLoggedInFavorites(favCards))
                 }
-                })
+            })
 
     }
 
     return (
         <main className="container--login">
-            <section>
-                <form className="form--login" onSubmit={handleLogin}>
-                    <h1>Magic: The Gathering™ - Apprentice</h1>
-                    <h2>Please sign in</h2>
-                    <fieldset>
-                        <label htmlFor="inputEmail"> Email address </label>
-                        <input type="email"
-                            value={email}
-                            onChange={evt => set(evt.target.value)}
-                            className="form-control"
-                            placeholder="Email address"
-                            required autoFocus />
-                    </fieldset>
-                    <fieldset>
-                        <button type="submit">
-                            Sign in
-                        </button>
-                    </fieldset>
-                </form>
-            </section>
-            <section className="link--register">
-                <Link to="/register">Not a member yet?</Link>
-            </section>
+            <div id="headers">
+                <h1 className="signInH">Magic: The Gathering™ - Apprentice</h1>
+                <h2 className="signInH">Please sign in</h2>
+            </div>
+            <form className="form--login" onSubmit={handleLogin}>
+                <label htmlFor="inputEmail">Enter your Email</label>
+                <input type="email"
+                    value={email}
+                    onChange={evt => set(evt.target.value)}
+                    className="form-control"
+                    placeholder="Email address"
+                    required autoFocus />
+                <button className="loginSignUpButtons" type="submit">
+                    Sign in
+                </button>
+            </form>
+            <Link id="registerLink" to="/register">Not a member yet?</Link>
         </main>
     )
 }

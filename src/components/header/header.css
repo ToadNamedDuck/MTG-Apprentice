@@ -5,10 +5,11 @@
                               'embedded-opentype', and 'svg' */
 }
 
-#header{
+#header {
     display: flex;
+    flex-direction: row;
+    justify-content: center;
     font-family: beleren-smallcaps;
-    justify-content: space-between;
     height: 150px;
     max-height: 150px;
     width: auto;
@@ -16,14 +17,28 @@
     padding-top: 4px;
     padding-bottom: 4px;
 }
-a{
+
+a {
     margin-left: 3%;
 }
-#header--logo{
+
+#header--logo {
     height: 100%;
     width: auto;
 }
-#header--name{
+
+#header--name {
     align-self: center;
+    justify-self: center;
     font-size: 64px;
+}
+
+#siteFooter {
+    font-family: beleren-smallcaps;
+    text-align: center;
+    background-color: rgb(53, 53, 53);
+    color: rgb(230, 230, 230);
+    left: 0;
+    bottom: 0;
+    right: 0;
 }

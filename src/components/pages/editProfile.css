@@ -1,0 +1,60 @@
+@font-face {
+    font-family: 'matrixb';
+    src: local('matrixb'), url(/src/fonts/matrixb.ttf) format('TrueType');
+    /* other formats include: 'woff2', 'truetype, 'opentype',
+                              'embedded-opentype', and 'svg' */
+}
+
+#editProfileForm {
+    background: linear-gradient(#b4bbc4, #4e4a37);
+    margin: 0;
+    height: 75.8vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#profilePictureEditDiv{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+#userUserName, #userProfilePictureUrl{
+    width: 20%;
+}
+label{
+    margin-top: 25px;
+    font-family: matrixb;
+    margin-bottom: 5px;
+    font-size: 24px;
+}
+select{
+    width: 20%;
+    height: 30px;
+    font-family: matrixb;
+    font-size: 20px;
+    text-align: center;
+}
+option{
+    font-size: 20px;
+}
+#newPFP{
+    margin-top: 15px;
+}
+#sendEditedProfile{
+    background: linear-gradient(#b4bbc4, #4e4a37);
+    color: #e2c974;
+    font-family: matrixb;
+    font-size: 24px;
+    margin-top: 15px;
+    width: 20%;
+    margin-left: 40%;
+    margin-right: 40%;
+}
+#sendEditedProfile:hover{
+    background: linear-gradient(#b4bbc4, rgb(0, 175, 0))
+}
+#editHeader{
+    padding: 0;
+    margin-top: 25px;
+}

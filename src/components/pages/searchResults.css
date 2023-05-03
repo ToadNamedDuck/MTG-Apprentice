@@ -1,10 +1,36 @@
+@font-face {
+    font-family: 'beleren-smallcaps';
+    src: local('belerensmallcaps'), url(/src/fonts/belerensmallcaps-bold.ttf) format('TrueType');
+    /* other formats include: 'woff2', 'truetype, 'opentype',
+                              'embedded-opentype', and 'svg' */
+}
+
+#results{
+    background: linear-gradient(#b4bbc4, #4e4a37);
+    margin: 0;
+    height: 75.8vh;
+}
 #resultsPanel{
     display: flex;
     flex-wrap: wrap;
     width: 90%;
+    height: 560px;
+    max-height: 560px;
     margin-left: 5%;
     overflow-y: auto;
+    border: solid 2px black;
+    justify-content: space-evenly;
 }
 #searchResultsH2{
-    margin-left: 5%;
+    text-align: center;
+    margin: 0;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-family: beleren-smallcaps;
+}
+.individualResult{
+    border-bottom: solid 2px black;
+    margin-bottom: 25px;
+    margin-left: 25px;
+    margin-right: 25px;
 }

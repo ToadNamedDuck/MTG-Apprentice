@@ -1,0 +1,24 @@
+@font-face {
+    font-family: 'beleren-smallcaps';
+    src: local('belerensmallcaps'), url(/src/fonts/belerensmallcaps-bold.ttf) format('TrueType');
+    /* other formats include: 'woff2', 'truetype, 'opentype',
+                              'embedded-opentype', and 'svg' */
+}
+
+@font-face {
+    font-family: 'matrixb';
+    src: local('matrixb'), url(/src/fonts/matrixb.ttf) format('TrueType');
+    /* other formats include: 'woff2', 'truetype, 'opentype',
+                              'embedded-opentype', and 'svg' */
+}
+
+#card--details--mDiv{
+    background-color: #b4bbc4;
+}
+
+h1{
+    margin: 0;
+    padding: 25px;
+    text-align: center;
+    font-family: beleren-smallcaps;
+}

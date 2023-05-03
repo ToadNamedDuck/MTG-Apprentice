@@ -1,3 +1,10 @@
+@font-face {
+    font-family: 'beleren-smallcaps';
+    src: local('belerensmallcaps'), url(/src/fonts/belerensmallcaps-bold.ttf) format('TrueType');
+    /* other formats include: 'woff2', 'truetype, 'opentype',
+                              'embedded-opentype', and 'svg' */
+}
+
 #UserFavorites{
     height: 620px;
     width: 90%;
@@ -5,6 +12,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-family: beleren-smallcaps;
 }
 #favorites--header{
     display: inline-block;
@@ -25,7 +33,8 @@
 .individualFavorite{
     display: flex;
     flex-direction: column;
-}
-.removeFavorite{
-    
+    border-bottom: solid 2px black;
+    margin-bottom: 25px;
+    margin-left: 25px;
+    margin-right: 25px;
 }

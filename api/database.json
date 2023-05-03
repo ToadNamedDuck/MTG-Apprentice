@@ -11,17 +11,16 @@
     {
       "email": "duck@mtg-apprentice.com",
       "userName": "ToadNamedDuck",
-      "tagId": 0,
-      "profilePictureUrl": "https://cdn.openart.ai/stable_diffusion/c387a2965b5d2b59357dfb717d0d0e590898ff8a_2000x2000.webp",
+      "tagId": 1,
+      "profilePictureUrl": "https://commanderarena.files.wordpress.com/2016/03/851_grimgrincorpseborn.jpg?w=640",
       "id": 0
     },
     {
-      "id": 1,
       "email": "cloud@mtg-apprentice.com",
       "userName": "Cloudsterx",
       "tagId": 1,
-      "featuredFavoriteCardId": null,
-      "profilePictureUrl": "/green-icon.png"
+      "profilePictureUrl": "https://static.wikia.nocookie.net/mtgsalvation_gamepedia/images/8/87/R.svg",
+      "id": 1
     },
     {
       "email": "Mattyboi@gmail.com",
@@ -83,14 +82,6 @@
       "setName": "Magic Online Avatars",
       "imageUrl": "https://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=182295&type=card",
       "userId": 0
-    },
-    {
-      "cardId": "ad53597a-4448-5cbd-82bf-11d163b0c14f",
-      "name": "Archangel Avacyn ",
-      "setName": "Shadows over Innistrad",
-      "userId": 0,
-      "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=409741&type=card",
-      "id": 1
     },
     {
       "cardId": "86cb7e5f-7042-5134-9ed9-57cd3af38f20",
@@ -253,14 +244,6 @@
       "id": 26
     },
     {
-      "cardId": "6379198d-58dd-5794-abc6-d303e8793ffd",
-      "name": "Bone to Ash",
-      "setName": "Core Set 2019",
-      "userId": 0,
-      "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=447183&type=card",
-      "id": 27
-    },
-    {
       "cardId": "2e02531c-9439-577f-b3f3-838098b0a386",
       "name": "Hofri Ghostforge",
       "setName": "Strixhaven: School of Mages",
@@ -339,6 +322,310 @@
       "userId": 0,
       "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=544708&type=card",
       "id": 37
+    },
+    {
+      "cardId": "c96fd644-4445-5bae-9ea8-5286fc93677a",
+      "name": "Port Razer",
+      "setName": "Commander Legends",
+      "userId": 0,
+      "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=502342&type=card",
+      "id": 39
+    },
+    {
+      "cardId": "01fa4980-ddc3-51f6-a234-3d83395878bf",
+      "name": "Dream Strix",
+      "setName": "Strixhaven: School of Mages",
+      "userId": 0,
+      "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=516883&type=card",
+      "id": 40
+    },
+    {
+      "cardId": "9f1d1b9a-a7ac-5749-9506-d79cd1fe4592",
+      "name": "Nether Shadow",
+      "setName": "Limited Edition Alpha",
+      "userId": 0,
+      "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=72&type=card",
+      "id": 41
+    },
+    {
+      "cardId": "c8867a01-8d85-5829-a231-b8ecc5e309d0",
+      "name": "Prossh, Skyraider of Kher",
+      "setName": "Commander Legends",
+      "userId": 0,
+      "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=503333&type=card",
+      "id": 43
+    },
+    {
+      "cardId": "83039e0c-241b-5e45-aedb-ecc6e8d363b6",
+      "name": "Grimgrin, Corpse-Born",
+      "setName": "Innistrad",
+      "userId": 0,
+      "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=247237&type=card",
+      "id": 44
+    },
+    {
+      "cardId": "9d5b6d08-f88d-597e-938d-4373f78a7564",
+      "name": "Sedris, the Traitor King",
+      "setName": "Double Masters 2022",
+      "userId": 0,
+      "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=573049&type=card",
+      "id": 45
+    },
+    {
+      "cardId": "66b8e70c-90b9-5cfb-b515-ab86fdd0b2bb",
+      "name": "Shardless Agent",
+      "setName": "Modern Horizons 2",
+      "userId": 0,
+      "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=525356&type=card",
+      "id": 46
+    },
+    {
+      "cardId": "168406bb-37a7-5d7c-b60c-f18dbdb33fc4",
+      "name": "Stangg",
+      "setName": "Legends",
+      "userId": 0,
+      "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=1686&type=card",
+      "id": 50
+    },
+    {
+      "cardId": "ca9d1a7a-135e-50a0-b33f-b96b7a875590",
+      "name": "Lord of the Accursed",
+      "setName": "Game Night 2019",
+      "userId": 0,
+      "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=476098&type=card",
+      "id": 53
+    },
+    {
+      "cardId": "af721313-d416-5f63-ab3a-6f03f2fc7381",
+      "name": "Wild-Magic Sorcerer",
+      "setName": "Forgotten Realms Commander",
+      "userId": 0,
+      "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=531525&type=card",
+      "id": 55
+    },
+    {
+      "cardId": "78cae655-6d68-5183-bacc-44ce105043c4",
+      "name": "Queen Allenal of Ruadach",
+      "setName": "Dominaria United",
+      "userId": 0,
+      "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=578062&type=card",
+      "id": 56
+    },
+    {
+      "cardId": "e01b89df-a48a-5768-9ebf-58636a626df9",
+      "name": "Cursed Scroll",
+      "setName": "Vintage Masters",
+      "userId": 0,
+      "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=382902&type=card",
+      "id": 57
+    },
+    {
+      "cardId": "d5c168f3-c49e-51bb-a232-25e178e71d59",
+      "name": "Fatal Push",
+      "setName": "Kaladesh Remastered",
+      "userId": 0,
+      "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=547890&type=card",
+      "id": 58
+    },
+    {
+      "cardId": "ad53597a-4448-5cbd-82bf-11d163b0c14f",
+      "name": "Archangel Avacyn ",
+      "setName": "Shadows over Innistrad",
+      "userId": 0,
+      "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=409741&type=card",
+      "id": 59
+    },
+    {
+      "cardId": "8c56ccc9-a13d-58c9-b598-62ed6366a6ff",
+      "name": "Golem Artisan",
+      "setName": "Scars of Mirrodin",
+      "userId": 0,
+      "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=206360&type=card",
+      "id": 60
+    },
+    {
+      "cardId": "712fcd6d-86d2-5103-999e-b4ae10ef89f4",
+      "name": "Tendrils of Agony",
+      "setName": "Strixhaven Mystical Archive",
+      "userId": 0,
+      "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=517584&type=card",
+      "id": 61
+    },
+    {
+      "cardId": "50157c38-6e9a-5cfb-9dd0-3d39031614f4",
+      "name": "Grave Titan",
+      "setName": "Secret Lair Drop",
+      "userId": 0,
+      "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=509352&type=card",
+      "id": 62
+    },
+    {
+      "cardId": "73e33c97-d77d-5023-8265-4fa7f48df847",
+      "name": "Love Song of Night and Day",
+      "setName": "Dominaria United",
+      "userId": 0,
+      "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=574505&type=card",
+      "id": 63
+    },
+    {
+      "cardId": "183c8aeb-e585-5d81-97d2-a2dbac3ffea7",
+      "name": "Kitsune Diviner",
+      "setName": "Champions of Kamigawa",
+      "userId": 0,
+      "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=76652&type=card",
+      "id": 64
+    },
+    {
+      "cardId": "86b8cff5-8603-5d22-b4ff-03ff34ab626a",
+      "name": "Mikaeus, the Lunarch",
+      "setName": "Midnight Hunt Commander",
+      "userId": 0,
+      "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=539350&type=card",
+      "id": 65
+    },
+    {
+      "cardId": "2c204bfe-4159-5bdd-a7f5-c0fe3f4dd3eb",
+      "name": "Harsh Mercy",
+      "setName": "Onslaught",
+      "userId": 0,
+      "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=39614&type=card",
+      "id": 69
+    },
+    {
+      "cardId": "16c51de0-a63d-5030-8f0a-9bf62e7b0004",
+      "name": "Mountain",
+      "setName": "Jumpstart",
+      "userId": 1,
+      "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=489648&type=card",
+      "id": 70
+    },
+    {
+      "cardId": "707ed7ee-f7d0-599c-994e-b1a56a53489d",
+      "name": "Deadly Insect",
+      "setName": "Beatdown Box Set",
+      "userId": 1,
+      "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=27250&type=card",
+      "id": 71
+    },
+    {
+      "cardId": "952ba4d4-ef21-587f-b104-a4645d81c066",
+      "name": "Stet, Draconic Proofreader",
+      "setName": "Unsanctioned",
+      "userId": 1,
+      "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=479448&type=card",
+      "id": 72
+    },
+    {
+      "cardId": "b29d06ea-07cc-5623-b6f4-8d8448d23b04",
+      "name": "Kambal, Consul of Allocation",
+      "setName": "Double Masters 2022",
+      "userId": 1,
+      "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=573481&type=card",
+      "id": 73
+    },
+    {
+      "cardId": "d5c168f3-c49e-51bb-a232-25e178e71d59",
+      "name": "Fatal Push",
+      "setName": "Kaladesh Remastered",
+      "userId": 1,
+      "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=547890&type=card",
+      "id": 75
+    },
+    {
+      "cardId": "95453148-bccc-5d77-b932-6cccdf473d03",
+      "name": "Barrowin of Clan Undurr",
+      "setName": "Adventures in the Forgotten Realms",
+      "userId": 0,
+      "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=530970&type=card",
+      "id": 76
+    },
+    {
+      "cardId": "f87c7646-04f8-597f-aaae-2a633533fca7",
+      "name": "Queza, Augur of Agonies",
+      "setName": "Streets of New Capenna",
+      "userId": 0,
+      "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=559219&type=card",
+      "id": 77
+    },
+    {
+      "cardId": "538861cc-7828-5e24-85e0-706474a0ea15",
+      "name": "Stormscape Familiar",
+      "setName": "Time Spiral Timeshifted",
+      "userId": 0,
+      "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=106637&type=card",
+      "id": 78
+    },
+    {
+      "cardId": "f9bcdb8f-d8b1-537d-904a-f6fd69016cf9",
+      "name": "Phylactery Lich",
+      "setName": "Magic 2011",
+      "userId": 0,
+      "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=205034&type=card",
+      "id": 79
+    },
+    {
+      "cardId": "44844f70-8247-5b78-aa78-8255735a3bcb",
+      "name": "Animate Dead",
+      "setName": "Fourth Edition",
+      "userId": 0,
+      "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=2085&type=card",
+      "id": 80
+    },
+    {
+      "cardId": "c15ba9cb-b499-53d3-a9ea-e5db78f4e72b",
+      "name": "Goblin Welder",
+      "setName": "Duel Decks: Elves vs. Inventors",
+      "userId": 0,
+      "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=442771&type=card",
+      "id": 81
+    },
+    {
+      "cardId": "fef5a7dc-3415-52fc-81a3-e9cd1927c1b9",
+      "name": "Reckless Bushwhacker",
+      "setName": "Oath of the Gatewatch",
+      "userId": 0,
+      "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=407626&type=card",
+      "id": 82
+    },
+    {
+      "cardId": "7484825f-cf0f-5721-91af-9f388b812410",
+      "name": "Goblin Bushwhacker",
+      "setName": "Secret Lair Drop",
+      "userId": 0,
+      "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=479374&type=card",
+      "id": 83
+    },
+    {
+      "cardId": "0909f672-15bf-5ae1-84e8-8829101bc685",
+      "name": "Plains",
+      "setName": "Battle for Zendikar",
+      "userId": 0,
+      "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=401994&type=card",
+      "id": 84
+    },
+    {
+      "cardId": "2b0e3c34-8f2a-5835-b0f7-63f8e6dcc2d5",
+      "name": "Kydele, Chosen of Kruphix",
+      "setName": "Commander 2016",
+      "userId": 0,
+      "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=420652&type=card",
+      "id": 85
+    },
+    {
+      "cardId": "b0ed1b16-2f51-5fe5-a0d8-558f06fb9155",
+      "name": "Sephara, Sky's Blade",
+      "setName": "Core Set 2020",
+      "userId": 0,
+      "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=466790&type=card",
+      "id": 86
+    },
+    {
+      "cardId": "6d4ef65f-47de-5e7e-b268-e28362c6d0b4",
+      "name": "Mountain",
+      "setName": "Phyrexia: All Will Be One",
+      "userId": 0,
+      "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=604622&type=card",
+      "id": 87
     }
   ],
   "friendUsers": [

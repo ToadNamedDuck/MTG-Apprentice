@@ -2,8 +2,9 @@ import { useEffect, useState } from "react";
 import { getSingleUserById, getUserTags } from "../../api-calls/LocalAPICalls";
 import "./profile.css"
 import { EditProfileButton } from "../buttons/EditProfileButton";
+import { LogoutButton } from "../buttons/LogoutButton";
 
-export function ProfilePictureDetailCard({ id }) {
+export function ProfilePictureDetailCard({ id, setLoggedInFavorites }) {
     const [user, setUser] = useState(
         {
             userName: "Loading...",
@@ -36,12 +37,18 @@ export function ProfilePictureDetailCard({ id }) {
     }), [userTags])
 
 
+
     return <div id="userProfilePictureCard">
-                <img id="userProfilePicture" width="75px" height="75px" src={user?.profilePictureUrl} />
-                <div id="cardTextInfo">
-                    <p id="userNameCard">{user?.userName}'s Page</p>
-                    <p id="userTag">{currentUserTag?.name}</p>
-                </div>
-            <EditProfileButton profileId={id}/>
-            </div>
+        <img id="userProfilePicture" width="75px" height="75px" src={user?.profilePictureUrl} />
+        <div id="cardTextInfo">
+            <p id="userNameCard">{user?.userName}'s Page</p>
+            <p id="userTag">{currentUserTag?.name}</p>
+            {
+                parseInt(JSON.parse(localStorage.getItem("apprentice"))?.id) === parseInt(id) ?
+                    <LogoutButton setLoggedInFavorites={setLoggedInFavorites} />
+                    : ""
+            }
+        </div>
+        <EditProfileButton profileId={id} />
+    </div>
 }

@@ -1,0 +1,52 @@
+@font-face {
+    font-family: 'beleren-smallcaps';
+    src: local('belerensmallcaps'), url(/src/fonts/belerensmallcaps-bold.ttf) format('TrueType');
+    /* other formats include: 'woff2', 'truetype, 'opentype',
+                              'embedded-opentype', and 'svg' */
+}
+
+@font-face {
+    font-family: 'matrixb';
+    src: local('matrixb'), url(/src/fonts/matrixb.ttf) format('TrueType');
+    /* other formats include: 'woff2', 'truetype, 'opentype',
+                              'embedded-opentype', and 'svg' */
+}
+#random{
+    background: linear-gradient(#b4bbc4, #4e4a37);
+    margin: 0;
+    height: 75.8vh;
+}
+.individualCard{
+    border-bottom: solid 2px black;
+    margin-bottom: 25px;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+#randomCardDiv{
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    height: 580px;
+    max-height: 580px;
+    margin-left: 5%;
+    overflow-y: auto;
+    border: solid 2px black;
+    justify-content: space-evenly;
+}
+h2{
+    font-family: beleren-smallcaps;
+    margin: 0;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.goAgainButton{
+    background: linear-gradient(#b4bbc4, #4e4a37);
+    color: #e2c974;
+    font-family: matrixb;
+    font-size: 24px;
+    margin-top: 15px;
+    width: 20%;
+    margin-left: 40%;
+    margin-right: 40%;
+}

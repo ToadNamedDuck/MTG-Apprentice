@@ -12,41 +12,43 @@
                               'embedded-opentype', and 'svg' */
 }
 
-#userProfilePictureCard{
+#cardExpandedInfo{
     display: flex;
-    height: 75px;
-    max-height: 75px;
-    font-family: beleren-smallcaps;
-    max-width: 50%;
-    border: solid black 2px;
-    margin-left: 25%;
+    flex-direction: row;
     justify-content: space-between;
+    font-family: matrixb;
+    font-size: 20px;
+    padding-bottom: 1%;
+    min-height: 68vh;
 }
-#cardTextInfo{
+
+#cardExpandedInfo-Left{
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    height: 75px;
-    max-height: 75px;
-    width: 100%;
+    width: 40%;
+    max-width: 40%;
+    margin-left: 5%;
 }
-#userProfilePicture{
-    display: inline-block;
-    margin-left: 2%;
+
+#cardExpandedInfo-Right{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+    max-width: 40%;
+    margin-right: 5%;
 }
-#userNameCard{
-    font-size: 1.6em;
-    margin-top: 0;
-    margin-bottom: 0;
+
+.textSplit{
+    margin-bottom: 15px;
+    text-align: center;
 }
-#userTag{
-    margin-top: 0;
-    margin-bottom: 0;
-    font-family: matrixb;
-    font-size: 18px;
+#P-T{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
-#profile--container{
-    padding-top: 13px;
-    background: linear-gradient(#b4bbc4, #4e4a37);
+h3{
+    text-align: center;
 }

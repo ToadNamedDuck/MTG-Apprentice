@@ -5,6 +5,13 @@
                               'embedded-opentype', and 'svg' */
 }
 
+@font-face {
+    font-family: 'matrixb';
+    src: local('matrixb'), url(/src/fonts/matrixb.ttf) format('TrueType');
+    /* other formats include: 'woff2', 'truetype, 'opentype',
+                              'embedded-opentype', and 'svg' */
+}
+
 #main--navbar{
     font-family: beleren-smallcaps;
     display: flex;
@@ -30,10 +37,12 @@ input{
     font-family: beleren-smallcaps;
     font-size: 20px;
     border: solid black 2px;
+    height: 24px;
 }
 #navSearch--Button{
-    font-family: beleren-smallcaps;
+    font-family: matrixb;
     background: linear-gradient(#b4bbc4, #4e4a37);
-    font-size: 20px;
+    font-size: 24px;
     color: #e2c974;
+    height: 30px;
 }
