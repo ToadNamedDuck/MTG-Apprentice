@@ -9,8 +9,10 @@
     background: linear-gradient(#b4bbc4, #4e4a37);
     color: #e2c974;
     font-family: matrixb;
-    font-size: 14px;
+    font-size: 24px;
     width: 35%;
+    align-self: center;
+    margin-bottom: 5px;
 }
 
 #logout__button:hover{

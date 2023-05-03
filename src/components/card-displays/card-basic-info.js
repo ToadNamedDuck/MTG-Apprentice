@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { AddToFavorites } from "../buttons/AddToFavoritesButton";
 import "./card-basic-info.css"
-export function CardBasicInfo({ cardObject, loggedInFavorites, setLoggedInFavorites }){
+export function CardBasicInfo({ cardObject, loggedInFavorites, setLoggedInFavorites, onProfile }){
 
     if(!cardObject.imageUrl){
         cardObject.imageUrl = "/no-card-image.jpg"

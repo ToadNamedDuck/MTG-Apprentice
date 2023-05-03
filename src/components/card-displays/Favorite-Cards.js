@@ -15,7 +15,7 @@ export function FavoriteCards({ loggedInUserId, favoritedCardsOwnerId, cardArray
                                 favoriteId={card.id}
                                 setLoggedInFavorites={setLoggedInFavorites}
                                 setFavCards={setFavCards}/>
-                            <CardBasicInfo setLoggedInFavorites={setLoggedInFavorites} loggedInFavorites={loggedInFavorites} cardObject={card} />
+                            <CardBasicInfo onProfile={true} setLoggedInFavorites={setLoggedInFavorites} loggedInFavorites={loggedInFavorites} cardObject={card} />
                         </div>
                     }
                     )

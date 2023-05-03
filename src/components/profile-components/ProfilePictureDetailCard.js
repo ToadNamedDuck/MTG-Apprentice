@@ -41,8 +41,10 @@ export function ProfilePictureDetailCard({ id, setLoggedInFavorites }) {
     return <div id="userProfilePictureCard">
         <img id="userProfilePicture" width="75px" height="75px" src={user?.profilePictureUrl} />
         <div id="cardTextInfo">
-            <p id="userNameCard">{user?.userName}'s Page</p>
-            <p id="userTag">{currentUserTag?.name}</p>
+            <div id="profile--card--headers">
+                <h1 id="userNameCard">{user?.userName}'s Page</h1>
+                <h2 id="userTag">{currentUserTag?.name}</h2>
+            </div>
             {
                 parseInt(JSON.parse(localStorage.getItem("apprentice"))?.id) === parseInt(id) ?
                     <LogoutButton setLoggedInFavorites={setLoggedInFavorites} />

@@ -9,7 +9,7 @@ export function RemoveFromFavorites({loggedInUserId, favoritedCardsOwnerId, favo
 
     return parseInt(loggedInUserId) === parseInt(favoritedCardsOwnerId) ?
     <button className="removeFavorite" onClick={buttonClickHandler}>
-        Remove Favorite
+        X
     </button>
     :
     ""

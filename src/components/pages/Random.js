@@ -8,7 +8,8 @@ export function Random({ loggedInFavorites, setLoggedInFavorites }) {
         {
             name: "Loading...",
             imageUrl: "/createcard.jpg",
-            setName: "Loading"
+            setName: "Loading...",
+            id: "LoadingCardLOL"
         }
     ])
     const [error, setError] = useState(null)
@@ -32,7 +33,7 @@ export function Random({ loggedInFavorites, setLoggedInFavorites }) {
             <div id="randomCardDiv">
             {
                 randomCards.map(card => {
-                    return <div id="individualCard" key={`random--card--${card.id + card.name + randomCards.indexOf(card)}`}>
+                    return <div className="individualCard" key={`random--card--${card.id + card.name + randomCards.indexOf(card)}`}>
                         <CardBasicInfo
                         cardObject={card}
                         loggedInFavorites={loggedInFavorites}

@@ -22,7 +22,7 @@ export function Profile({loggedInFavorites, setLoggedInFavorites}){
             name: "Loading...",
             imageUrl: "/createcard.jpg",
             setName: "Loading...",
-            id: -1
+            id: "LoadingCardLOL"
         }
     ]
     );

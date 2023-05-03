@@ -23,11 +23,14 @@
 .card--basic--header{
     overflow: wrap;
     text-align: center;
+    font-size: 20px;
+    margin-bottom: 5px;
 }
 .card--basic--footer{
     overflow: wrap;
     text-align: center;
+    font-size: 18px;
 }
 .emptyButtonSpot{
-    height: 20px;
+    height: 30px;
 }

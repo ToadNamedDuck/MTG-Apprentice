@@ -11,7 +11,7 @@
     {
       "email": "duck@mtg-apprentice.com",
       "userName": "ToadNamedDuck",
-      "tagId": 1,
+      "tagId": 9,
       "profilePictureUrl": "https://commanderarena.files.wordpress.com/2016/03/851_grimgrincorpseborn.jpg?w=640",
       "id": 0
     },
@@ -71,6 +71,71 @@
     {
       "id": 3,
       "name": "Loading...",
+      "isUserTag": true
+    },
+    {
+      "id": 4,
+      "name": "Tide Surfer",
+      "isUserTag": true
+    },
+    {
+      "id": 5,
+      "name": "Green Thumb",
+      "isUserTag": true
+    },
+    {
+      "id": 6,
+      "name": "Fuselighter",
+      "isUserTag": true
+    },
+    {
+      "id": 7,
+      "name": "Chairman of the Azorius Senate",
+      "isUserTag": true
+    },
+    {
+      "id": 8,
+      "name": "Loyal to the House Dimir",
+      "isUserTag": true
+    },
+    {
+      "id": 9,
+      "name": "Acolyte of the Cult of Rakdos",
+      "isUserTag": true
+    },
+    {
+      "id": 10,
+      "name": "Tribesman of the Gruul Clans",
+      "isUserTag": true
+    },
+    {
+      "id": 11,
+      "name": "Druid of Selesnya",
+      "isUserTag": true
+    },
+    {
+      "id": 12,
+      "name": "Not associated with The Orzhov Syndicate™",
+      "isUserTag": true
+    },
+    {
+      "id": 13,
+      "name": "Card-Holding Member of the Izzet League",
+      "isUserTag": true
+    },
+    {
+      "id": 14,
+      "name": "Necromancer of the Golgari Swarm",
+      "isUserTag": true
+    },
+    {
+      "id": 15,
+      "name": "Devoted to the Legion of Boros",
+      "isUserTag": true
+    },
+    {
+      "id": 16,
+      "name": "Scientist of Simic Combine",
       "isUserTag": true
     }
   ],
@@ -218,14 +283,6 @@
       "userId": 0,
       "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=463946&type=card",
       "id": 23
-    },
-    {
-      "cardId": "9c531396-f661-5654-a8e0-d828ba3e0c99",
-      "name": "Ironhoof Ox",
-      "setName": "Portal Second Age",
-      "userId": 0,
-      "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=6628&type=card",
-      "id": 24
     },
     {
       "cardId": "b7fa2cea-fda3-50da-bc19-3d3924a276b9",
@@ -626,6 +683,262 @@
       "userId": 0,
       "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=604622&type=card",
       "id": 87
+    },
+    {
+      "cardId": "PotOfGreed",
+      "name": "Pot of Greed",
+      "setName": "Legends of Blue Eyes White Dragon",
+      "userId": 0,
+      "imageUrl": "https://m.media-amazon.com/images/I/515zKdpiGoL._AC_UF894,1000_QL80_.jpg",
+      "id": 88
+    },
+    {
+      "cardId": "efe7daf2-bd75-5878-91d5-5e1f79b0cdfc",
+      "name": "Ill-Tempered Loner ",
+      "setName": "Innistrad: Crimson Vow",
+      "userId": 0,
+      "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=541019&type=card",
+      "id": 89
+    },
+    {
+      "cardId": "4d3561d8-1289-5b13-9cf9-08c89de95e55",
+      "name": "Hero's Demise",
+      "setName": "Betrayers of Kamigawa",
+      "userId": 0,
+      "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=74465&type=card",
+      "id": 90
+    },
+    {
+      "cardId": "f2aa69f2-db69-5564-8661-d51855c6796a",
+      "name": "Demonic Tutor",
+      "setName": "Strixhaven Mystical Archive",
+      "userId": 0,
+      "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=517577&type=card",
+      "id": 92
+    },
+    {
+      "cardId": "1ead4754-36eb-5463-bf63-c1fe672bc3ef",
+      "name": "Fatal Push",
+      "setName": "Double Masters",
+      "userId": 0,
+      "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=491352&type=card",
+      "id": 93
+    },
+    {
+      "cardId": "001e28fe-5bc1-57ef-9814-adc1195a297b",
+      "name": "Liliana, the Last Hope",
+      "setName": "Double Masters 2022",
+      "userId": 0,
+      "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=572991&type=card",
+      "id": 94
+    },
+    {
+      "cardId": "f93cadb6-5cd4-5b3b-a374-c44c57cd1c01",
+      "name": "Liliana, the Last Hope",
+      "setName": "Double Masters 2022",
+      "userId": 0,
+      "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=573408&type=card",
+      "id": 95
+    },
+    {
+      "cardId": "d0d78dd8-cbe2-5387-8433-5ce7e4ef0d11",
+      "name": "Liliana, the Last Hope",
+      "setName": "Double Masters 2022",
+      "userId": 0,
+      "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=572989&type=card",
+      "id": 96
+    },
+    {
+      "cardId": "f1b64874-2cfa-5b4e-ad9a-36a726648ac0",
+      "name": "Liliana's Elite",
+      "setName": "Double Masters 2022",
+      "userId": 0,
+      "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=571415&type=card",
+      "id": 97
+    },
+    {
+      "cardId": "e9b3f7f3-acaa-54b2-a8b5-599991e1e57f",
+      "name": "Liliana, Death's Majesty",
+      "setName": "Amonkhet",
+      "userId": 0,
+      "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=426799&type=card",
+      "id": 98
+    },
+    {
+      "cardId": "2cb71270-7f90-5164-a813-b716015c1caf",
+      "name": "Liliana's Mastery",
+      "setName": "Amonkhet",
+      "userId": 0,
+      "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=426800&type=card",
+      "id": 99
+    },
+    {
+      "cardId": "4ea1e23e-5c15-5488-9ea9-20646c48eb89",
+      "name": "Liliana, Death Wielder",
+      "setName": "Amonkhet",
+      "userId": 0,
+      "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=429667&type=card",
+      "id": 100
+    },
+    {
+      "cardId": "d07e8986-d359-5216-8273-3465f0c859c6",
+      "name": "Liliana's Influence",
+      "setName": "Amonkhet",
+      "userId": 0,
+      "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=429669&type=card",
+      "id": 101
+    },
+    {
+      "cardId": "3eeafdbe-4d7b-5201-8b95-0670d99b650d",
+      "name": "Liliana, Death's Majesty",
+      "setName": "Amonkhet Remastered",
+      "userId": 0,
+      "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=547578&type=card",
+      "id": 102
+    },
+    {
+      "cardId": "931441a3-a739-5e27-a56f-15b3f87bb568",
+      "name": "Metropolis Angel",
+      "setName": "Streets of New Capenna",
+      "userId": 0,
+      "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=555404&type=card",
+      "id": 103
+    },
+    {
+      "cardId": "3f59172c-0f2e-5490-b574-08d5efdc44cb",
+      "name": "Island",
+      "setName": "Duel Decks: Speed vs. Cunning",
+      "userId": 0,
+      "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=386334&type=card",
+      "id": 104
+    },
+    {
+      "cardId": "9ba47561-fc9f-581b-ac68-28e7425c4721",
+      "name": "Festering Evil",
+      "setName": "Weatherlight",
+      "userId": 0,
+      "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=4456&type=card",
+      "id": 105
+    },
+    {
+      "cardId": "1435efe1-ab58-56c4-9cf5-c9247b0a9ca4",
+      "name": "Wojek Siren",
+      "setName": "Ravnica: City of Guilds",
+      "userId": 0,
+      "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=87896&type=card",
+      "id": 106
+    },
+    {
+      "cardId": "36b595c1-f6f0-5042-a812-27cfbc50a400",
+      "name": "Sword of Dungeons & Dragons",
+      "setName": "Unsanctioned",
+      "userId": 0,
+      "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=479472&type=card",
+      "id": 107
+    },
+    {
+      "cardId": "12dda9b2-bec9-5111-a78a-807b361f04e5",
+      "name": "Soltari Priest",
+      "setName": "Time Spiral Timeshifted",
+      "userId": 0,
+      "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=108856&type=card",
+      "id": 108
+    },
+    {
+      "cardId": "89962ac1-e504-5a20-9267-061799bd2a33",
+      "name": "Nimraiser Paladin",
+      "setName": "Phyrexia: All Will Be One",
+      "userId": 0,
+      "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=602631&type=card",
+      "id": 109
+    },
+    {
+      "cardId": "cbbbc766-4928-50b5-995e-c683ac5f88f3",
+      "name": "Wild Ricochet",
+      "setName": "Magic 2014",
+      "userId": 0,
+      "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=370790&type=card",
+      "id": 110
+    },
+    {
+      "cardId": "023da185-3849-50c5-98c2-8e8e8a5f9cf1",
+      "name": "Jedit Ojanen, Mercenary",
+      "setName": "Dominaria United Commander",
+      "userId": 0,
+      "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=597910&type=card",
+      "id": 111
+    },
+    {
+      "cardId": "033eb1e7-7536-52c0-a371-44267b8fb9ab",
+      "name": "Hengegate Pathway ",
+      "setName": "Kaldheim",
+      "userId": 0,
+      "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=507449&type=card",
+      "id": 112
+    },
+    {
+      "cardId": "22266dbf-615f-5c6b-833f-a6130d970166",
+      "name": "Swamp",
+      "setName": "Duel Decks: Zendikar vs. Eldrazi",
+      "userId": 0,
+      "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=401712&type=card",
+      "id": 113
+    },
+    {
+      "cardId": "af070e79-f9a2-5fb0-ae31-a11740c9b6b0",
+      "name": "Island",
+      "setName": "Amonkhet",
+      "userId": 0,
+      "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=426953&type=card",
+      "id": 115
+    },
+    {
+      "cardId": "6afe20fc-b25e-5558-beb6-f2adce1d4ecc",
+      "name": "Darkslick Shores",
+      "setName": "Zendikar Rising Expeditions",
+      "userId": 0,
+      "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=497172&type=card",
+      "id": 116
+    },
+    {
+      "cardId": "57bfa77a-a7d6-5069-98a3-bfb52ddca33c",
+      "name": "Forbidden Orchard",
+      "setName": "Double Masters 2022",
+      "userId": 0,
+      "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=573539&type=card",
+      "id": 117
+    },
+    {
+      "cardId": "c098afe1-1b41-5f8e-994b-ae4b2121c038",
+      "name": "Hardened Scales",
+      "setName": "Double Masters 2022",
+      "userId": 0,
+      "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=573031&type=card",
+      "id": 118
+    },
+    {
+      "cardId": "ee7adcd4-52f5-57cd-8277-1b553a6b70b5",
+      "name": "Liesa, Forgotten Archangel",
+      "setName": "Innistrad: Midnight Hunt",
+      "userId": 0,
+      "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=535027&type=card",
+      "id": 119
+    },
+    {
+      "cardId": "f2aa5ffc-0616-50be-89eb-866a4dc56697",
+      "name": "Trash Bin",
+      "setName": "Unfinity",
+      "userId": 0,
+      "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=583485&type=card",
+      "id": 120
+    },
+    {
+      "cardId": "LoadingCardLOL",
+      "name": "Loading...",
+      "setName": "Loading...",
+      "userId": 0,
+      "imageUrl": "/createcard.jpg",
+      "id": 121
     }
   ],
   "friendUsers": [

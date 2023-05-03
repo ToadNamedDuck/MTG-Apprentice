@@ -5,12 +5,26 @@
                               'embedded-opentype', and 'svg' */
 }
 
-.addToFavoritesButton, .removeFavorite{
+.addToFavoritesButton{
     background: linear-gradient(#b4bbc4, #4e4a37);
     color: #e2c974;
     font-family: matrixb;
-    font-size: 14px;
-    width: 100%;
+    font-size: 24px;
+    margin-left: 91%;
+    width: 30px;
+    height: 30px;
+}
+
+.removeFavorite{
+    background: linear-gradient(#b4bbc4, #4e4a37);
+    color: #e2c974;
+    font-family: matrixb;
+    font-size: 24px;
+    width: 30px;
+    margin-bottom: -40px;
+    align-self: end;
+    height: 30px;
+    z-index: 99;
 }
 
 .addToFavoritesButton:hover{

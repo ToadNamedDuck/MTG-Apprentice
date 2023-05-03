@@ -14,52 +14,83 @@ export function SearchResults({ cardNameSearch, loggedInFavorites, setLoggedInFa
     useEffect((() => {
         //Every time the search value changes (when they hit enter or search with the button)
         //We want to put the loading card up, or a loading panel later.
-        setSearchResults({cards: [
-            {
-                name: "Loading",
-                imageUrl: "/createcard.jpg",
-                setName: "Loading..."
-            }
-        ]}
+        setSearchResults({
+            cards: [
+                {
+                    name: "Loading",
+                    imageUrl: "/createcard.jpg",
+                    setName: "Loading...",
+                    id: "LoadingCardLOL"
+                }
+            ]
+        }
         )
 
         //Reset response status
         setStatus(null)
 
-        if(cardNameSearch.length !== 0){
-            fetch(`https://api.magicthegathering.io/v1/cards?name=${cardNameSearch}&pageSize=20`)
-            .then((response) => {
-                //check if response is ok
-                if(response.ok){
-                    return response.json().then(returnObject => setSearchResults(returnObject))
+        if (cardNameSearch.length !== 0) {
+            if (cardNameSearch !== "Pot of Greed" && cardNameSearch !== "Cool S") {
+                fetch(`https://api.magicthegathering.io/v1/cards?name=${cardNameSearch}&pageSize=20`)
+                    .then((response) => {
+                        //check if response is ok
+                        if (response.ok) {
+                            return response.json().then(returnObject => setSearchResults(returnObject))
+                        }
+                        //Show the error component if not
+                        else {
+                            setStatus("Error Occurred")
+                        }
+                    })
+                    .catch(() => setStatus("Error Occurred"))
+            }
+            if(cardNameSearch === "Pot of Greed"){
+                const PotOfGreed = {
+                    cards: [
+                        {
+                            name: "Pot of Greed",
+                            imageUrl: "https://m.media-amazon.com/images/I/515zKdpiGoL._AC_UF894,1000_QL80_.jpg",
+                            setName: "Legends of Blue Eyes White Dragon",
+                            id: "PotOfGreed"
+                        }
+                    ]
                 }
-                //Show the error component if not
-                else{
-                    setStatus("Error Occurred")
+                setSearchResults(PotOfGreed)
+            }
+            if(cardNameSearch === "Cool S"){
+                const CoolS = {
+                    cards: [
+                        {
+                            name: "Cool S",
+                            imageUrl: "/coolS.png",
+                            setName: "School Desk Adventures",
+                            id: "CoolS"
+                        }
+                    ]
                 }
-            })
-            .catch(() => setStatus("Error Occurred"))
+                setSearchResults(CoolS)
+            }
         }
-        
+
 
     }), [cardNameSearch])
 
     return <div id="results">
         <h2 id="searchResultsH2">Search Results</h2>
         <div id="resultsPanel">
-        {   searchResults?.cards?.length > 0 && responseStatus === null?
-            searchResults.cards.map(card => <div className="individualResult" key={`simple-card--${card.id}`+`--${searchResults.cards.indexOf(card)}`}>
-                <CardBasicInfo loggedInFavorites={loggedInFavorites}
-                setLoggedInFavorites={setLoggedInFavorites}
-                cardObject={card}
-                />
+            {searchResults?.cards?.length > 0 && responseStatus === null ?
+                searchResults.cards.map(card => <div className="individualResult" key={`simple-card--${card.id}` + `--${searchResults.cards.indexOf(card)}`}>
+                    <CardBasicInfo loggedInFavorites={loggedInFavorites}
+                        setLoggedInFavorites={setLoggedInFavorites}
+                        cardObject={card}
+                    />
                 </div>)
-            : 
+                :
                 searchResults?.cards?.length === 0 && responseStatus === null ?
-                <NoSearchResults/>
-            : 
-                <AnErrorOccurred onCardSearch={true}/>
-        }
+                    <NoSearchResults />
+                    :
+                    <AnErrorOccurred onCardSearch={true} />
+            }
         </div>
     </div>
 }
