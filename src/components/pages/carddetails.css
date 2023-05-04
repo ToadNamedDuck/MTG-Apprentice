@@ -14,7 +14,7 @@
 
 #card--details--mDiv{
     background-color: #b4bbc4;
-    height: 75.8vh;
+    min-height: 75.8vh;
 }
 
 h1{
