@@ -92,7 +92,7 @@ export function CardDetails() {
                     <CardExpandedInfo cardObj={cardFromApi} />
                 </>
                 :
-                <AnErrorOccurred />
+                <AnErrorOccurred onDetails={true}/>
         }
     </div>
 

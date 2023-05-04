@@ -3,3 +3,12 @@
     flex-direction: column;
     align-items: center;
 }
+#takeMeBack--a{
+    font-family: beleren-smallcaps;
+    text-decoration: none;
+    margin: 8px;
+    color: black;
+}
+#takeMeBack--a:hover{
+    color:#e2c974;
+}

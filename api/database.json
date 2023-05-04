@@ -11,7 +11,7 @@
     {
       "email": "duck@mtg-apprentice.com",
       "userName": "ToadNamedDuck",
-      "tagId": 9,
+      "tagId": 14,
       "profilePictureUrl": "https://commanderarena.files.wordpress.com/2016/03/851_grimgrincorpseborn.jpg?w=640",
       "id": 0
     },
@@ -733,70 +733,6 @@
       "id": 94
     },
     {
-      "cardId": "f93cadb6-5cd4-5b3b-a374-c44c57cd1c01",
-      "name": "Liliana, the Last Hope",
-      "setName": "Double Masters 2022",
-      "userId": 0,
-      "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=573408&type=card",
-      "id": 95
-    },
-    {
-      "cardId": "d0d78dd8-cbe2-5387-8433-5ce7e4ef0d11",
-      "name": "Liliana, the Last Hope",
-      "setName": "Double Masters 2022",
-      "userId": 0,
-      "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=572989&type=card",
-      "id": 96
-    },
-    {
-      "cardId": "f1b64874-2cfa-5b4e-ad9a-36a726648ac0",
-      "name": "Liliana's Elite",
-      "setName": "Double Masters 2022",
-      "userId": 0,
-      "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=571415&type=card",
-      "id": 97
-    },
-    {
-      "cardId": "e9b3f7f3-acaa-54b2-a8b5-599991e1e57f",
-      "name": "Liliana, Death's Majesty",
-      "setName": "Amonkhet",
-      "userId": 0,
-      "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=426799&type=card",
-      "id": 98
-    },
-    {
-      "cardId": "2cb71270-7f90-5164-a813-b716015c1caf",
-      "name": "Liliana's Mastery",
-      "setName": "Amonkhet",
-      "userId": 0,
-      "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=426800&type=card",
-      "id": 99
-    },
-    {
-      "cardId": "4ea1e23e-5c15-5488-9ea9-20646c48eb89",
-      "name": "Liliana, Death Wielder",
-      "setName": "Amonkhet",
-      "userId": 0,
-      "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=429667&type=card",
-      "id": 100
-    },
-    {
-      "cardId": "d07e8986-d359-5216-8273-3465f0c859c6",
-      "name": "Liliana's Influence",
-      "setName": "Amonkhet",
-      "userId": 0,
-      "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=429669&type=card",
-      "id": 101
-    },
-    {
-      "cardId": "3eeafdbe-4d7b-5201-8b95-0670d99b650d",
-      "name": "Liliana, Death's Majesty",
-      "setName": "Amonkhet Remastered",
-      "userId": 0,
-      "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=547578&type=card",
-      "id": 102
-    },
-    {
       "cardId": "931441a3-a739-5e27-a56f-15b3f87bb568",
       "name": "Metropolis Angel",
       "setName": "Streets of New Capenna",
@@ -925,20 +861,68 @@
       "id": 119
     },
     {
-      "cardId": "f2aa5ffc-0616-50be-89eb-866a4dc56697",
-      "name": "Trash Bin",
-      "setName": "Unfinity",
-      "userId": 0,
-      "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=583485&type=card",
-      "id": 120
-    },
-    {
       "cardId": "LoadingCardLOL",
       "name": "Loading...",
       "setName": "Loading...",
       "userId": 0,
       "imageUrl": "/createcard.jpg",
       "id": 121
+    },
+    {
+      "cardId": "5b2886f1-1614-52a1-a141-c5e019aa0425",
+      "name": "Zur the Enchanter",
+      "setName": "Double Masters 2022",
+      "userId": 0,
+      "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=571630&type=card",
+      "id": 122
+    },
+    {
+      "cardId": "16c51de0-a63d-5030-8f0a-9bf62e7b0004",
+      "name": "Mountain",
+      "setName": "Jumpstart",
+      "userId": 0,
+      "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=489648&type=card",
+      "id": 123
+    },
+    {
+      "cardId": "b29d06ea-07cc-5623-b6f4-8d8448d23b04",
+      "name": "Kambal, Consul of Allocation",
+      "setName": "Double Masters 2022",
+      "userId": 0,
+      "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=573481&type=card",
+      "id": 124
+    },
+    {
+      "cardId": "0b637440-bc16-50b2-a007-037810f7a68c",
+      "name": "Moonsnare Specialist",
+      "setName": "Kamigawa: Neon Dynasty",
+      "userId": 0,
+      "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=552714&type=card",
+      "id": 125
+    },
+    {
+      "cardId": "168dad80-30af-549c-a0c0-a94c4b490e08",
+      "name": "Orzhova",
+      "setName": "Planechase Anthology Planes",
+      "userId": 0,
+      "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=423641&type=card",
+      "id": 126
+    },
+    {
+      "cardId": "473453cf-9018-51b6-877c-3c5e77ce40ab",
+      "name": "Mirko Vosk, Mind Drinker",
+      "setName": "GRN Guild Kit",
+      "userId": 0,
+      "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=455920&type=card",
+      "id": 127
+    },
+    {
+      "cardId": "88400e06-e77c-55b6-bb5f-6809663e6824",
+      "name": "Thoughtseize",
+      "setName": "Double Masters",
+      "userId": 0,
+      "imageUrl": "http://gatherer.wizards.com/Handlers/Image.ashx?multiverseid=491353&type=card",
+      "id": 128
     }
   ],
   "friendUsers": [
