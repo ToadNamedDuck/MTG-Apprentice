@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import "./header.css"
-export function Header({setLoggedInFavorites}) {
+export function Header() {
     return <header id="header">
         <Link to="/">    
             <img id="header--logo" src="/Logo.png"/>

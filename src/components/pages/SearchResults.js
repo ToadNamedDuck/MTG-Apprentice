@@ -89,7 +89,7 @@ export function SearchResults({ cardNameSearch, loggedInFavorites, setLoggedInFa
                 searchResults?.cards?.length === 0 && responseStatus === null ?
                     <NoSearchResults />
                     :
-                    <AnErrorOccurred onCardSearch={true} />
+                    <AnErrorOccurred onCardSearch={true}/>
             }
         </div>
     </div>
