@@ -24,7 +24,7 @@ export function AnErrorOccurred({onCardSearch, onRandomSearch, onDetails}){
             onDetails ?
             <>
                 <h3 className="ErrorH">Try to view this card's details again momentarily.</h3>
-                <button onClick={() => {navigate(-1)} }>Take me Back</button>
+                <button id="takeMeBack--button" onClick={() => {navigate(-1)} }>Take me Back</button>
             </>
             :
             ""
